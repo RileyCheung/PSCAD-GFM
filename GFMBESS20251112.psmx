@@ -1,0 +1,534 @@
+<Meta name="GFMBESS20251112">
+  <messagelist>
+    <message status="normal" label="build" groupid="400002" scope="GFMBESS20251112" id="1978127955" classid="MessageObj"><![CDATA[Begin compiling with PSCAD Version 5.0.2]]></message>
+    <message status="warning" label="build" groupid="206502" id="184654958" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="1710878304" /><![CDATA[Signal 'RT_14' type conversion may lose accuracy at connection 'IN1']]></message>
+    <message status="warning" label="build" groupid="206502" id="2033019351" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="1710878304" /><![CDATA[Signal 'CBGrdCmd' type conversion may lose accuracy at connection 'IN2']]></message>
+    <message status="warning" label="build" groupid="206502" id="929032824" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="1758181778" /><![CDATA[Signal 'CBGrd' type conversion may lose accuracy at connection 'IN1']]></message>
+    <message status="warning" label="build" groupid="206502" id="325293098" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="1758181778" /><![CDATA[Signal 'CBGrdCmd' type conversion may lose accuracy at connection 'IN2']]></message>
+    <message status="warning" label="build" groupid="206502" id="1420934656" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="Synchronizer_1_1" status="warning" link="1522488531" /><![CDATA[Signal 'CBGrdCmd' type conversion may lose accuracy at connection 'CBOpen']]></message>
+    <message status="warning" label="build" groupid="206502" id="2105142074" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:select" status="warning" link="1095452366" /><![CDATA[Signal 'CBGrd' type conversion may lose accuracy at connection 'Ctrl']]></message>
+    <message status="warning" label="build" groupid="206502" id="1909081537" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:select" status="warning" link="1523623473" /><![CDATA[Signal 'CBGrd' type conversion may lose accuracy at connection 'Ctrl']]></message>
+    <message status="warning" label="build" groupid="206502" id="1183506922" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="37433359" /><![CDATA[Signal 'CBGrd' type conversion may lose accuracy at connection 'IN2']]></message>
+    <message status="warning" label="build" groupid="206502" id="227103654" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="1209339265" /><![CDATA[Signal 'CBGrd' type conversion may lose accuracy at connection 'IN2']]></message>
+    <message status="normal" label="build" groupid="100006" id="714758777" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="AllPlots" status="normal" link="1585416183" /><![CDATA[Compiling 'AllPlots'. Generating network and data files.]]></message>
+    <message status="normal" label="build" groupid="100006" id="1523180720" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="Synchronizer_1_1" status="normal" link="1522488531" /><![CDATA[Compiling 'Synchronizer_1_1'. Generating network and data files.]]></message>
+    <message status="warning" label="build" groupid="206502" id="2051423960" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="990811001" /><![CDATA[Signal 'RT_23' type conversion may lose accuracy at connection 'IN2']]></message>
+    <message status="warning" label="build" groupid="206502" id="270602673" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="990811001" /><![CDATA[Signal 'RT_19' type conversion may lose accuracy at connection 'IN1']]></message>
+    <message status="normal" label="build" groupid="100006" id="214372991" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="Grid_1" status="normal" link="1186628671" /><![CDATA[Compiling 'Grid_1'. Generating network and data files.]]></message>
+    <message status="normal" label="build" groupid="100006" id="7338152" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="BESSGFM_VirtImp" status="normal" link="477036609" /><![CDATA[Compiling 'BESSGFM_VirtImp'. Generating network and data files.]]></message>
+    <message status="warning" label="build" groupid="206502" id="1560411257" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:inv" status="warning" link="1790533292" /><![CDATA[Signal 'CB1Opn' type conversion may lose accuracy at connection 'IN']]></message>
+    <message status="warning" label="build" groupid="206502" id="779126986" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="1289795091" /><![CDATA[Signal 'RT_2' type conversion may lose accuracy at connection 'IN2']]></message>
+    <message status="warning" label="build" groupid="206502" id="1175812763" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="1289795091" /><![CDATA[Signal 'CB1' type conversion may lose accuracy at connection 'IN1']]></message>
+    <message status="warning" label="build" groupid="206502" id="1209876560" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="Synchronizer_1_1" status="warning" link="1004414084" /><![CDATA[Signal 'CB1Opn' type conversion may lose accuracy at connection 'CBOpen']]></message>
+    <message status="warning" label="build" groupid="206502" id="1424425825" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:select" status="warning" link="1720419631" /><![CDATA[Signal 'CB1' type conversion may lose accuracy at connection 'Ctrl']]></message>
+    <message status="warning" label="build" groupid="206502" id="955683898" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:select" status="warning" link="612471426" /><![CDATA[Signal 'CB1' type conversion may lose accuracy at connection 'Ctrl']]></message>
+    <message status="warning" label="build" groupid="206502" id="113831348" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="329181370" /><![CDATA[Signal 'CB1' type conversion may lose accuracy at connection 'IN2']]></message>
+    <message status="normal" label="build" groupid="100006" id="680625560" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="BESS_1_1" status="normal" link="1672393785" /><![CDATA[Compiling 'BESS_1_1'. Generating network and data files.]]></message>
+    <message status="normal" label="build" groupid="100006" id="64852789" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="BESS_2LvlVSC_1_1" status="normal" link="102488955" /><![CDATA[Compiling 'BESS_2LvlVSC_1_1'. Generating network and data files.]]></message>
+    <message status="normal" label="build" groupid="100006" id="223205690" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="Conv_to_pu3_1_1" status="normal" link="504392661" /><![CDATA[Compiling 'Conv_to_pu3_1_1'. Generating network and data files.]]></message>
+    <message status="normal" label="build" groupid="100006" id="1958244641" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="BESS_LC_filter_1_1" status="normal" link="973937663" /><![CDATA[Compiling 'BESS_LC_filter_1_1'. Generating network and data files.]]></message>
+    <message status="normal" label="build" groupid="100006" id="866430879" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="BESS_GFMCtrl_VImp2_1" status="normal" link="952269080" /><![CDATA[Compiling 'BESS_GFMCtrl_VImp2_1'. Generating network and data files.]]></message>
+    <message status="warning" label="build" groupid="206502" id="873005349" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:select" status="warning" link="1615555617" /><![CDATA[Signal 'freq' type conversion may lose accuracy at connection 'Ctrl']]></message>
+    <message status="warning" label="build" groupid="206502" id="1436026863" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="1002308802" /><![CDATA[Signal 'RT_142' type conversion may lose accuracy at connection 'IN1']]></message>
+    <message status="warning" label="build" groupid="206502" id="442874005" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:logic_mult" status="warning" link="1497100953" /><![CDATA[Signal 'RT_154' type conversion may lose accuracy at connection 'IN2']]></message>
+    <message status="normal" label="build" groupid="100006" id="2146337542" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="PNExtract_3_2_3_1_1" status="normal" link="95829368" /><![CDATA[Compiling 'PNExtract_3_2_3_1_1'. Generating network and data files.]]></message>
+    <message status="normal" label="build" groupid="100006" id="1073419727" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="POD_1_3_1_1" status="normal" link="512038188" /><![CDATA[Compiling 'POD_1_3_1_1'. Generating network and data files.]]></message>
+    <message status="normal" label="build" groupid="100006" id="16573984" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="PIwithFreeze_2_1_3_1_1" status="normal" link="1063944600" /><![CDATA[Compiling 'PIwithFreeze_2_1_3_1_1'. Generating network and data files.]]></message>
+    <message status="normal" label="build" groupid="100006" id="579737389" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="PIwithFreeze_3_1_1_3_1_1" status="normal" link="259955630" /><![CDATA[Compiling 'PIwithFreeze_3_1_1_3_1_1'. Generating network and data files.]]></message>
+    <message status="normal" label="build" groupid="100006" link="1125335413" id="1125335413" classid="FileNavigator"><![CDATA[Generating 'C:\Users\RileyCheung\Desktop\PSCAD GFM Models\December\GFMBESS20251112.gf46\GFMBESS20251112.map'.]]><file scope="GFMBESS20251112">C:\Users\RileyCheung\Desktop\PSCAD GFM Models\December\GFMBESS20251112.gf46\GFMBESS20251112.map</file></message>
+    <message status="normal" label="build" groupid="100015" scope="GFMBESS20251112" id="51289817" classid="MessageObj"><![CDATA[The total number of live nodes: 46]]></message>
+    <message status="normal" label="build" groupid="0" link="1740853185" id="1740853185" classid="FileNavigator"><![CDATA[Coding .mak file: 'C:\Users\RileyCheung\Desktop\PSCAD GFM Models\December\GFMBESS20251112.gf46\\GFMBESS20251112.mak']]><file scope="GFMBESS20251112">C:\Users\RileyCheung\Desktop\PSCAD GFM Models\December\GFMBESS20251112.gf46\\GFMBESS20251112.mak</file></message>
+    <message status="normal" label="build" groupid="100001" scope="GFMBESS20251112" id="231096404" classid="MessageObj"><![CDATA[Non-professional licenses are limited to a single, electrical subsystem. Subsystem splitting has been internally disabled for this simulation.]]></message>
+    <message status="normal" label="build" groupid="400000" scope="GFMBESS20251112" id="1569676375" classid="MessageObj"><![CDATA[Time for Compile: 843ms  Make: 0ms]]></message>
+    <message status="normal" label="build" groupid="400000" scope="GFMBESS20251112" id="1210205951" classid="MessageObj"><![CDATA[Solve Time = 0ms]]></message>
+    <message status="normal" label="build" groupid="100016" scope="GFMBESS20251112" id="1515926880" classid="MessageObj"><![CDATA[Will execute (1): call C:\Program Files (x86)\GFortran\4.6\bin\gf46vars.bat]]></message>
+    <message status="normal" label="build" groupid="100016" scope="GFMBESS20251112" id="913406039" classid="MessageObj"><![CDATA[Will execute (1): call "C:\Program Files (x86)\GFortran\4.6\bin\gf46vars.bat"]]></message>
+    <message status="normal" label="build" groupid="100016" scope="GFMBESS20251112" id="249660597" classid="MessageObj"><![CDATA[Will execute (2): make -j -f GFMBESS20251112.mak]]></message>
+    <message status="normal" label="build" groupid="100016" scope="GFMBESS20251112" id="1582557111" classid="MessageObj"><![CDATA[Will execute (2): "C:\Users\RileyCheung\Desktop\PSCAD GFM Models\December\GFMBESS20251112.gf46\GFMBESS20251112_mak.bat"]]></message>
+    <message status="normal" label="build" groupid="100005" scope="GFMBESS20251112" id="1258543479" classid="MessageObj"><![CDATA[Creating EMTDC executable...]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="1341615261" classid="MessageObj"><![CDATA[C:\Users\RileyCheung\Desktop\PSCAD GFM Models\December\GFMBESS20251112.gf46>call "C:\Program Files (x86)\GFortran\4.6\bin\gf46vars.bat" ]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="1471016963" classid="MessageObj"><![CDATA[Compiling 'DS.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="1409774256" classid="MessageObj"><![CDATA[Compiling 'Main.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="1596245046" classid="MessageObj"><![CDATA[Compiling 'AllPlots.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="1576916281" classid="MessageObj"><![CDATA[Compiling 'Synchronizer_1_1.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="2034216920" classid="MessageObj"><![CDATA[Compiling 'Grid_1.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="1102717199" classid="MessageObj"><![CDATA[Compiling 'BESSGFM_VirtImp.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="456688076" classid="MessageObj"><![CDATA[Compiling 'BESS_1_1.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="1744744421" classid="MessageObj"><![CDATA[Compiling 'BESS_2LvlVSC_1_1.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="452115580" classid="MessageObj"><![CDATA[Compiling 'Conv_to_pu3_1_1.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="744228785" classid="MessageObj"><![CDATA[Compiling 'BESS_LC_filter_1_1.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="2044228576" classid="MessageObj"><![CDATA[Compiling 'BESS_GFMCtrl_VImp2_1.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="1851393773" classid="MessageObj"><![CDATA[Compiling 'PNExtract_3_2_3_1_1.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="1723550675" classid="MessageObj"><![CDATA[Compiling 'POD_1_3_1_1.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="507311456" classid="MessageObj"><![CDATA[Compiling 'PIwithFreeze_2_1_3_1_1.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100004" scope="GFMBESS20251112" id="1922373565" classid="MessageObj"><![CDATA[Compiling 'PIwithFreeze_3_1_1_3_1_1.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="1379050657" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  AllPlots.f]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="358504326" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  Synchronizer_1_1.f]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="226570406" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  Grid_1.f]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="699287028" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  BESSGFM_VirtImp.f]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="67770473" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  BESS_1_1.f]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="188357349" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  BESS_2LvlVSC_1_1.f]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="2108688503" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  Conv_to_pu3_1_1.f]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="1002309713" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  BESS_LC_filter_1_1.f]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="944623277" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  BESS_GFMCtrl_VImp2_1.f]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="1802568392" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  PNExtract_3_2_3_1_1.f]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="919003593" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  POD_1_3_1_1.f]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="333244178" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  PIwithFreeze_2_1_3_1_1.f]]></message>
+    <message status="normal" label="build" groupid="0" scope="GFMBESS20251112" id="60489604" classid="MessageObj"><![CDATA[gfortran.exe -c -ffree-form -fdefault-real-8 -fdefault-double-8 -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\inc" -I"C:\Program Files (x86)\PSCAD50\emtdc\gf46\windows" -O2 -Wconversion  PIwithFreeze_3_1_1_3_1_1.f]]></message>
+    <message status="normal" label="build" groupid="100013" scope="GFMBESS20251112" id="48711591" classid="MessageObj"><![CDATA[Linking objects and libraries into binary 'GFMBESS20251112.exe']]></message>
+    <message status="normal" label="build" groupid="400003" scope="GFMBESS20251112" id="563972704" classid="MessageObj"><![CDATA[Finished compiling with PSCAD Version 5.0.2]]></message>
+    <message status="warning" label="runtime" groupid="200009" id="354507260" classid="CmpNavigator">
+      <User scope="GFMBESS20251112" name="master:upramp" status="warning" link="1255929352" /><![CDATA[Outputs at the begining and at the end of ramp are the same.]]></message>
+  </messagelist>
+  <ViewContext>
+    <Window defn="GFMBESS20251112:Main" call="0" />
+  </ViewContext>
+  <List classid="View">
+    <View name="Main" zoomscale="1.875" scrollx="0" scrolly="0" />
+    <View name="Grid_1" zoomscale="1.875" scrollx="25" scrolly="0" />
+    <View name="BESSGFM_VirtImp" zoomscale="1.875" scrollx="0" scrolly="0" />
+    <View name="Synchronizer_1_1" zoomscale="1.875" scrollx="226" scrolly="0" />
+    <View name="AllPlots" zoomscale="1.25" scrollx="0" scrolly="0" />
+    <View name="TL1" zoomscale="1.5" scrollx="0" scrolly="252" />
+    <View name="Load" zoomscale="1.5" scrollx="0" scrolly="0" />
+    <View name="BESS_1_1" zoomscale="1.5" scrollx="0" scrolly="0" />
+    <View name="BESS_2LvlVSC_1_1" zoomscale="1.875" scrollx="0" scrolly="55" />
+    <View name="BESS_GFMCtrl_VImp2_1" zoomscale="1.5" scrollx="374" scrolly="60" />
+    <View name="PIwithFreeze_2_1_3_1_1" zoomscale="2.34375" scrollx="0" scrolly="294" />
+    <View name="PNExtract_3_2_3_1_1" zoomscale="1.875" scrollx="0" scrolly="608" />
+    <View name="BESS_LC_filter_1_1" zoomscale="1.5" scrollx="0" scrolly="72" />
+  </List>
+  <WireCache>
+    <Wire classid="TLine" id="224473084" name="GFMBESS20250825:TL1" x="828" y="450" w="200" h="58" orient="0" disable="true" defn="GFMBESS20250825:TL1" recv="-1" send="-1" back="-1" crc="47641533">
+      <vertex x="0" y="0" />
+      <vertex x="36" y="0" />
+      <vertex x="108" y="0" />
+      <vertex x="144" y="0" />
+      <User classid="UserCmp" id="390446123" name="GFMBESS20251112:TL1" x="0" y="0" w="0" h="0" z="-1" orient="0" defn="GFMBESS20251112:TL1" link="-1" q="4" disable="false">
+        <paramlist name="" link="-1" crc="0">
+          <param name="Name" value="TL1" />
+          <param name="R" value="0.137330900485" />
+          <param name="Freq" value="50.0 [Hz]" />
+          <param name="X" value="1.67524877773" />
+          <param name="B" value="1.10270351431e-05" />
+          <param name="Length" value="4 [km]" />
+          <param name="Dim" value="3" />
+          <param name="Mode" value="0" />
+          <param name="CoupleEnab" value="0" />
+          <param name="cct_overlayed" value="0" />
+          <param name="CoupleName" value="row" />
+          <param name="CoupleOffset" value="0.0 [m]" />
+          <param name="CoupleRef" value="0" />
+          <param name="ManEnab" value="0" />
+          <param name="tname" value="tandem_segment" />
+          <param name="sfault" value="0" />
+          <param name="linc" value="10.0 [km]" />
+          <param name="steps" value="3" />
+          <param name="DataFormat" value="0" />
+          <param name="VR" value="230.0 [kV]" />
+          <param name="MVA" value="100.0 [MVA]" />
+          <param name="r0mpu" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="r0m" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="xl0mpu" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="xl0m" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="xc0mpu" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="xc0m" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="bc0mpu" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="tt0m" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="zs0m" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="gen_cnst" value="1" />
+          <param name="const_path" value="C:\Temp\my_constants_file.tlo" />
+          <param name="Date" value="1766032264" />
+        </paramlist>
+      </User>
+    </Wire>
+    <Wire classid="TLine" id="1174341288" name="GFMBESS20250825:TL1" x="1620" y="216" w="200" h="58" orient="0" disable="true" defn="GFMBESS20250825:TL1" recv="-1" send="-1" back="-1" crc="102138926">
+      <vertex x="0" y="0" />
+      <vertex x="36" y="0" />
+      <vertex x="108" y="0" />
+      <vertex x="144" y="0" />
+      <User classid="UserCmp" id="48140313" name="GFMBESS20251112:TL1" x="0" y="0" w="0" h="0" z="-1" orient="0" defn="GFMBESS20251112:TL1" link="-1" q="4" disable="false">
+        <paramlist name="" link="-1" crc="0">
+          <param name="Name" value="TL3" />
+          <param name="R" value="0.274661800971" />
+          <param name="Freq" value="50.0 [Hz]" />
+          <param name="X" value="3.35049755547" />
+          <param name="B" value="2.20540702861e-05" />
+          <param name="Length" value="8 [km]" />
+          <param name="Dim" value="3" />
+          <param name="Mode" value="0" />
+          <param name="CoupleEnab" value="0" />
+          <param name="cct_overlayed" value="0" />
+          <param name="CoupleName" value="row" />
+          <param name="CoupleOffset" value="0.0 [m]" />
+          <param name="CoupleRef" value="0" />
+          <param name="ManEnab" value="0" />
+          <param name="tname" value="tandem_segment" />
+          <param name="sfault" value="0" />
+          <param name="linc" value="10.0 [km]" />
+          <param name="steps" value="3" />
+          <param name="DataFormat" value="0" />
+          <param name="VR" value="230.0 [kV]" />
+          <param name="MVA" value="100.0 [MVA]" />
+          <param name="r0mpu" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="r0m" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="xl0mpu" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="xl0m" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="xc0mpu" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="xc0m" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="bc0mpu" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="tt0m" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="zs0m" value="dim (10,10)">
+            <row><![CDATA[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,-1,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,-1,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,-1,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,-1,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,-1,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,-1,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,-1,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,-1,-1]]></row>
+            <row><![CDATA[0,0,0,0,0,0,0,0,0,-1]]></row>
+          </param>
+          <param name="gen_cnst" value="1" />
+          <param name="const_path" value="C:\Temp\my_constants_file.tlo" />
+          <param name="Date" value="1766032264" />
+        </paramlist>
+      </User>
+    </Wire>
+  </WireCache>
+  <Output device="EMTDC" version="2010" date="2026/01/07" time="20:24:43.000000">
+    <Domain name="Time" unit="s" mult="0.0" skew="0.0">
+      <Sample rate="100000.0" end="950000" />
+    </Domain>
+    <List classid="Analog">
+      <Analog name="Main(0):Vrms - Bus 33A" index="1" gindex="100663297" id="1089774094:0" label="" dim="1" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0):Vphase - Bus 33A" index="2" gindex="100663298" id="636650149:0" label="" dim="3" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0):Vline - Bus 33A" index="5" gindex="100663301" id="1483493639:0" label="" dim="3" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0):Current - Bus 33A" index="8" gindex="100663304" id="1948850322:0" label="" dim="3" unit="kA" min="-2.0" max="2.0" />
+      <Analog name="Main(0):P - Bus 33A" index="11" gindex="100663307" id="1369540466:0" label="" dim="1" unit="MW" min="-2.0" max="2.0" />
+      <Analog name="Main(0):Q - Bus 33A" index="12" gindex="100663308" id="84809758:0" label="" dim="1" unit="Mvar" min="-2.0" max="2.0" />
+      <Analog name="Main(0):Vrms - Grid (33kV)" index="13" gindex="100663309" id="1243128076:0" label="" dim="1" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0):Vphase - Grid" index="14" gindex="100663310" id="1938987157:0" label="" dim="3" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0):Current - Grid" index="17" gindex="100663313" id="91506300:0" label="" dim="3" unit="kA" min="-2.0" max="2.0" />
+      <Analog name="Main(0):P - grid (+: from Thevenin source)" index="20" gindex="100663316" id="1746774164:0" label="" dim="1" unit="MW" min="-2.0" max="2.0" />
+      <Analog name="Main(0):Q - grid (+: from Thevenin source)" index="21" gindex="100663317" id="330623385:0" label="" dim="1" unit="Mvar" min="-2.0" max="2.0" />
+      <Analog name="Main(0):f - grid (33kV)" index="22" gindex="100663318" id="37968041:0" label="" dim="1" unit="Hz" min="47.5" max="51.0" />
+      <Analog name="Main(0):f - Bus 33A" index="23" gindex="100663319" id="2032254394:0" label="" dim="1" unit="Hz" min="40" max="60" />
+      <Analog name="Main(0):fgrid_Ref" index="24" gindex="100663320" id="1417344043:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\Synchronizer_1_1(Synchronizer_1_1):|Vderr|" index="25" gindex="100663321" id="1088375325:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\Synchronizer_1_1(Synchronizer_1_1):|Vqerr|" index="26" gindex="100663322" id="1302105606:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\Synchronizer_1_1(Synchronizer_1_1):f Grid" index="27" gindex="100663323" id="921019196:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\Synchronizer_1_1(Synchronizer_1_1):VqGrid" index="28" gindex="100663324" id="1058406598:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\Synchronizer_1_1(Synchronizer_1_1):VdGrid" index="29" gindex="100663325" id="7273010:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\Grid_1(Grid_1):SCLBase" index="30" gindex="100663326" id="3339812:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\Grid_1(Grid_1):Rp" index="31" gindex="100663327" id="1766368347:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\Grid_1(Grid_1):SCLBase" index="32" gindex="100663328" id="1179624709:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\Grid_1(Grid_1):Rs" index="33" gindex="100663329" id="94002231:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\Grid_1(Grid_1):Lp" index="34" gindex="100663330" id="1054301965:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0):Vphase - BESS" index="35" gindex="100663331" id="379868966:0" label="" dim="3" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0):Vline - BESS" index="38" gindex="100663334" id="554263844:0" label="" dim="3" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0):Current - BESS" index="41" gindex="100663337" id="649611765:0" label="" dim="3" unit="kA" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0):P - BESS" index="44" gindex="100663340" id="574316602:0" label="" dim="1" unit="MW" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0):Q - BESS" index="45" gindex="100663341" id="596494484:0" label="" dim="1" unit="Mvar" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0):f - 33kV" index="46" gindex="100663342" id="28182334:0" label="" dim="1" unit="Hz" min="40" max="60" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0):Vrms - BESS" index="47" gindex="100663343" id="2016705236:0" label="" dim="1" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\Synchronizer_1_1(Synchronizer_1_1):|Vderr|" index="48" gindex="100663344" id="1088375325:1" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\Synchronizer_1_1(Synchronizer_1_1):|Vqerr|" index="49" gindex="100663345" id="1302105606:1" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\Synchronizer_1_1(Synchronizer_1_1):f Grid" index="50" gindex="100663346" id="921019196:1" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\Synchronizer_1_1(Synchronizer_1_1):VqGrid" index="51" gindex="100663347" id="1058406598:1" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\Synchronizer_1_1(Synchronizer_1_1):VdGrid" index="52" gindex="100663348" id="7273010:1" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0):fref" index="53" gindex="100663349" id="1376836009:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0):V_DC" index="54" gindex="100663350" id="873744524:0" label="" dim="1" unit="kV" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0):I_DC" index="55" gindex="100663351" id="535938276:0" label="" dim="1" unit="kA" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0):P_dc" index="56" gindex="100663352" id="479883373:0" label="" dim="1" unit="kW" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0):Untitled" index="57" gindex="100663353" id="1697320491:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0):Converter LV currents (VSC side)" index="58" gindex="100663354" id="29573736:0" label="" dim="3" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Carrier" index="61" gindex="100663357" id="707627798:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):dVnMag" index="62" gindex="100663358" id="860624365:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vmag N" index="63" gindex="100663359" id="258294903:0" label="" dim="1" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vqn*" index="64" gindex="100663360" id="414195303:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Iq" index="65" gindex="100663361" id="1058538085:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):edN" index="66" gindex="100663362" id="956854166:0" label="" dim="1" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vdn*" index="67" gindex="100663363" id="1708198460:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vabc* tot" index="68" gindex="100663364" id="2111456136:0" label="" dim="3" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Xv" index="71" gindex="100663367" id="16028615:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Rv" index="72" gindex="100663368" id="208305058:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vq" index="73" gindex="100663369" id="1939832799:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vd" index="74" gindex="100663370" id="1546446893:0" label="" dim="1" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vqref virt." index="75" gindex="100663371" id="209835962:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Imag" index="76" gindex="100663372" id="1412514036:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vdref virt." index="77" gindex="100663373" id="1580497966:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):ZvCorr" index="78" gindex="100663374" id="1977538797:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vdref" index="79" gindex="100663375" id="794008421:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Imax" index="80" gindex="100663376" id="1074405347:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vabc* N" index="81" gindex="100663377" id="674174360:0" label="" dim="3" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):m*" index="84" gindex="100663380" id="641531957:0" label="" dim="1" unit="" min="0" max="1" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vabc* P" index="85" gindex="100663381" id="444825755:0" label="" dim="3" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vrmspoc" index="88" gindex="100663384" id="328575833:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vacref*" index="89" gindex="100663385" id="1405583579:0" label="" dim="1" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):m*" index="90" gindex="100663386" id="1514971764:0" label="" dim="1" unit="" min="0" max="1" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):IqN" index="91" gindex="100663387" id="1911417185:0" label="" dim="1" unit="pu" min="-1.0" max="1.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):IdN" index="92" gindex="100663388" id="597620015:0" label="" dim="1" unit="pu" min="-1.0" max="1.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):&lt;Untitled&gt;" index="93" gindex="100663389" id="388452707:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):VqN" index="94" gindex="100663390" id="1132974691:0" label="" dim="1" unit="pu" min="-1.0" max="1.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):VdN" index="95" gindex="100663391" id="493420936:0" label="" dim="1" unit="pu" min="-1.0" max="1.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):dTheta" index="96" gindex="100663392" id="1800185208:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):iq" index="97" gindex="100663393" id="1585856572:0" label="" dim="1" unit="pu" min="-1.0" max="1.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Perr" index="98" gindex="100663394" id="102016310:0" label="" dim="1" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Ppu" index="99" gindex="100663395" id="1265531407:0" label="" dim="1" unit="pu" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):BESS frequency" index="100" gindex="100663396" id="1691162804:0" label="" dim="1" unit="Hz" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):id" index="101" gindex="100663397" id="642947741:0" label="" dim="1" unit="pu" min="-1.0" max="1.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):FRT" index="102" gindex="100663398" id="2072616473:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vq" index="103" gindex="100663399" id="803728350:0" label="" dim="1" unit="pu" min="-1.0" max="1.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Pref*" index="104" gindex="100663400" id="1654664695:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Eabc" index="105" gindex="100663401" id="419022496:0" label="" dim="3" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):Vd" index="108" gindex="100663404" id="2099206311:0" label="" dim="1" unit="pu" min="-1.0" max="1.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0):fref" index="109" gindex="100663405" id="530681337:0" label="" dim="1" unit="Hz" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PNExtract_3_2_3_1_1(0):Vabc (-)" index="110" gindex="100663406" id="1670728717:0" label="" dim="3" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PNExtract_3_2_3_1_1(0):Vabc (+)" index="113" gindex="100663409" id="1340426819:0" label="" dim="3" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PNExtract_3_2_3_1_1(0):VAB (-)" index="116" gindex="100663412" id="1735765983:0" label="" dim="2" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PNExtract_3_2_3_1_1(0):VAB (+)" index="118" gindex="100663414" id="859788255:0" label="" dim="2" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PNExtract_3_2_3_1_1(0):VAB shifted" index="120" gindex="100663416" id="2116053951:0" label="" dim="2" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PNExtract_3_2_3_1_1(0):VAB0" index="122" gindex="100663418" id="417124219:0" label="" dim="3" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PNExtract_3_2_3_1_1(1):Vabc (-)" index="125" gindex="100663421" id="1670728717:1" label="" dim="3" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PNExtract_3_2_3_1_1(1):Vabc (+)" index="128" gindex="100663424" id="1340426819:1" label="" dim="3" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PNExtract_3_2_3_1_1(1):VAB (-)" index="131" gindex="100663427" id="1735765983:1" label="" dim="2" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PNExtract_3_2_3_1_1(1):VAB (+)" index="133" gindex="100663429" id="859788255:1" label="" dim="2" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PNExtract_3_2_3_1_1(1):VAB shifted" index="135" gindex="100663431" id="2116053951:1" label="" dim="2" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PNExtract_3_2_3_1_1(1):VAB0" index="137" gindex="100663433" id="417124219:1" label="" dim="3" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\POD_1_3_1_1(0):In" index="140" gindex="100663436" id="1752325856:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\POD_1_3_1_1(0):Out V" index="141" gindex="100663437" id="1960405031:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\POD_1_3_1_1(0):HP" index="142" gindex="100663438" id="1413557441:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\POD_1_3_1_1(0):Out f" index="143" gindex="100663439" id="27362454:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\POD_1_3_1_1(0):Out" index="144" gindex="100663440" id="494471499:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PIwithFreeze_2_1_3_1_1(0):Untitled" index="145" gindex="100663441" id="297254337:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PIwithFreeze_2_1_3_1_1(1):Untitled" index="146" gindex="100663442" id="297254337:1" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PIwithFreeze_3_1_1_3_1_1(0):Untitled" index="147" gindex="100663443" id="1740722021:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PIwithFreeze_3_1_1_3_1_1(1):Untitled" index="148" gindex="100663444" id="1740722021:1" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0)\BESSGFM_VirtImp(0)\BESS_1_1(0)\BESS_2LvlVSC_1_1(0)\BESS_GFMCtrl_VImp2_1(0)\PIwithFreeze_3_1_1_3_1_1(2):Untitled" index="149" gindex="100663445" id="1740722021:2" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    </List>
+    <List classid="Digital" />
+  </Output>
+</Meta>

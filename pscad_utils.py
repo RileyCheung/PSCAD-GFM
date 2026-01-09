@@ -13,11 +13,17 @@ from mhi.pscad.utilities.file import OutFile
 # ------------------------------------------------------------------
 
 class Sim:
-    def __init__(self, test_name, prefA = 0, scl = 5, xr = 5):
+    def __init__(self, test_name, prefA = 0, scl = 5, xr = 5, H = 2, D = 1/1000, fdroop = 0.01, inverter_size = 1.1, no_inverters = 1, POD_en = 0):
         self.test_name = test_name
-        self.prefA = prefA
-        self.scl = scl
-        self.xr = xr
+        self.prefA = prefA # plant acitve power setpoint (pu)
+        self.scl = scl # grid short circuit level
+        self.xr = xr # grid x/r ratio
+        self.H = H # inertia
+        self.D = D # damping
+        self.fdroop = fdroop
+        self.inverter_size = inverter_size # capacity of single inverter module (MVA)
+        self.no_inverters = no_inverters # parallel inverters in plant
+        self.POD_en = POD_en # Power oscillation damper 
 
 # ------------------------------------------------------------------
 # Component Parameter Setters
@@ -43,6 +49,58 @@ def set_XR_ratio(value: float, project) -> None:
     slider.parameters(Value=value)
     print(f"[INFO] X/R set to {value}")
 
+def set_H(value: float, project) -> None:
+    """Update the inertia constant H of the VSM controller """
+    BESS_plant0 = project.component(477036609).canvas()
+    BESS_plant1 = BESS_plant0.component(1672393785).canvas()
+    inverter_model = BESS_plant1.component(102488955).canvas()
+    converter_controls = inverter_model.component(952269080).canvas()
+    slider_H = converter_controls.component(999528713) 
+    slider_H.parameters(Value=value)
+    print(f"[INFO] H set to {value}")
+
+def set_D(value: float, project) -> None:
+    """Update the Dammping D of the VSM controller """
+    BESS_plant0 = project.component(477036609).canvas()
+    BESS_plant1 = BESS_plant0.component(1672393785).canvas()
+    inverter_model = BESS_plant1.component(102488955).canvas()
+    converter_controls = inverter_model.component(952269080).canvas()
+    slider_D = converter_controls.component(445867551) 
+    slider_D.parameters(Value=value)
+    print(f"[INFO] D set to {value}")
+
+def set_fdroop(value: float, project) -> None:
+    """Update the frequency droop of the BESS plant """
+    BESS_plant0 = project.component(477036609).canvas()
+    BESS_plant1 = BESS_plant0.component(1672393785).canvas()
+    slider_fdroop = BESS_plant1.component(1505948255) 
+    slider_fdroop.parameters(Value=value)
+    print(f"[INFO] Fdroop set to {value}")
+
+def set_inverter_size(value: float, project) -> None:
+    """Update the single inverter Sbase (MVA) """
+    BESS_plant0 = project.component(477036609).canvas()
+    BESS_plant1 = BESS_plant0.component(1672393785).canvas()
+    inverter_size_constant = BESS_plant1.component(1643639519) 
+    inverter_size_constant.parameters(Value=value)
+    print(f"[INFO] Single Inverter Sbase set to {value}")
+
+def set_no_inverters(value: float, project) -> None:
+    """Update the number of inverters comprising BESS """
+    BESS_plant0 = project.component(477036609).canvas()
+    no_inverter_int = BESS_plant0.component(1834444465) 
+    no_inverter_int.parameters(Value=value)
+    print(f"[INFO] Number of Inverters set to {value}")
+
+def set_POD(value: float, project) -> None:
+    """Update the Power Oscillation Damper functionality """
+    BESS_plant0 = project.component(477036609).canvas()
+    BESS_plant1 = BESS_plant0.component(1672393785).canvas()
+    inverter_model = BESS_plant1.component(102488955).canvas()
+    converter_controls = inverter_model.component(952269080).canvas()
+    POD_en_switch = converter_controls.component(2046559337) 
+    POD_en_switch.parameters(Value=value)
+    print(f"[INFO] POD_en set to {value}")
 
 # ------------------------------------------------------------------
 # Simulation Worker
@@ -92,6 +150,12 @@ def run_simulation(
         set_PrefA(sim.prefA, main)
         set_SCL(sim.scl, main)
         set_XR_ratio(sim.xr, main)
+        set_H(sim.H, main)
+        set_D(sim.D, main)
+        set_fdroop(sim.fdroop, main)
+        set_POD(sim.POD_en, main)
+        set_inverter_size(sim.inverter_size, main)
+        set_no_inverters(sim.no_inverters, main)
 
         print(f"[RUN] {sim.test_name}")
         project.run()

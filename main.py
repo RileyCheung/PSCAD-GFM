@@ -11,20 +11,23 @@ from pscad_utils import Sim, run_simulation, collect_results, convert_results_to
 # ------------------------------------------------------------------
 # Simulation Cases and parameters
 # ------------------------------------------------------------------
-TIME_PARAMS = (6, 20, 250)  # duration (s), time-step (µs), sample-step (µs)
+TIME_PARAMS = (5, 5, 250)  # duration (s), time-step (µs), sample-step (µs)
 SIMULATIONS = []
 
-sim1 = Sim("Base")
+sim1 = Sim("D_1000")
 SIMULATIONS.append(sim1)
 
-sim2 = Sim("SCL10")
-sim2.scl = 10
+sim2 = Sim('D_100')
+sim2.D = 1/100
 SIMULATIONS.append(sim2)
 
-sim3 = Sim("SCL20")
-sim3.scl = 20
+sim3 = Sim("D_10")
+sim3.D = 1/10
 SIMULATIONS.append(sim3)
 
+sim4 = Sim("D_1")
+sim4.D = 1/1
+SIMULATIONS.append(sim4)
 # ------------------------------------------------------------------
 # Main entry-point
 # ------------------------------------------------------------------

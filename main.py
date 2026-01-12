@@ -8,26 +8,6 @@ import time
 from multiprocessing import Process, Queue
 from pscad_utils import Sim, run_simulation, collect_results, convert_results_to_csv
 
-# TEST CASES
-ROCOF_TEST = 0
-IBR_FAULT = 1
-LOAD_FAULT = 2
-LOAD_JUMP = 3
-
-# FAULT CASES
-NO_FAULT = 0
-P2G_A = 1
-P2G_B = 2
-P2G_C = 3
-P2G_AB = 4
-P2G_AC = 5
-P2G_BC = 6
-P2G_ABC = 7
-P2P_AB = 8
-P2P_AC = 9
-P2P_BC = 10
-P2P_ABC = 11
-
 # ------------------------------------------------------------------
 # Simulation Cases and parameters
 # ------------------------------------------------------------------

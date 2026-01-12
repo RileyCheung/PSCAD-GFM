@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------
-# PSCAD Automation Utilities Library
+# PSCAD Automation Utilities Library & Constants
 # ------------------------------------------------------------------
 
 import os
@@ -13,8 +13,23 @@ from mhi.pscad.utilities.file import OutFile
 # ------------------------------------------------------------------
 
 class Sim:
-    def __init__(self, test_name, prefA = 0, scl = 5, xr = 5, H = 2, D = 1/1000, fdroop = 0.01, inverter_size = 1.1, no_inverters = 1, POD_en = 0):
-        self.test_name = test_name
+    def __init__(
+            self, 
+            sim_name, 
+            prefA = 0, 
+            scl = 5, 
+            xr = 5, 
+            H = 2, 
+            D = 1/1000, 
+            fdroop = 0.01, 
+            inverter_size = 1.1, 
+            no_inverters = 1, 
+            POD_en = 0, 
+            line_length = 1, 
+            test_case = 0, # default ROCOF test
+            fault_type = 1
+            ):
+        self.sim_name = sim_name
         self.prefA = prefA # plant acitve power setpoint (pu)
         self.scl = scl # grid short circuit level
         self.xr = xr # grid x/r ratio
@@ -23,24 +38,57 @@ class Sim:
         self.fdroop = fdroop
         self.inverter_size = inverter_size # capacity of single inverter module (MVA)
         self.no_inverters = no_inverters # parallel inverters in plant
-        self.POD_en = POD_en # Power oscillation damper 
+        self.POD_en = POD_en # Power oscillation damper
+        self.line_length = line_length # Transmission line length between IBR and grid (m)
+        
+        self.test_case = test_case # rocof, fault, etc
+        self.fault_type = fault_type # used for both ibr and load faults
+        self.load_p = 1 # load value (MW)
+        self.load_pf = 1 # power factor of load
+
+            # TEST CASES
+        self.ROCOF_TEST = 0
+        self.IBR_FAULT_TEST = 1
+        self.LOAD_FAULT_TEST = 2
+        self.LOAD_JUMP_TEST = 3
+            # FAULT CASES
+        self.NO_FAULT = 0
+        self.P2G_A = 1
+        self.P2G_B = 2
+        self.P2G_C = 3
+        self.P2G_AB = 4
+        self.P2G_AC = 5
+        self.P2G_BC = 6
+        self.P2G_ABC = 7
+        self.P2P_AB = 8
+        self.P2P_AC = 9
+        self.P2P_BC = 10
+        self.P2P_ABC = 11
+        
+    def set_ROCOF(self):
+        self.test_case = self.ROCOF_TEST
+    def set_IBR_FAULT(self):
+        self.test_case = self.IBR_FAULT_TEST
+    def set_LOAD_FAULT(self):
+        self.test_case = self.LOAD_FAULT_TEST
+    def set_LOAD_JUMP(self):
+        self.test_case = self.LOAD_JUMP_TEST
 
 # ------------------------------------------------------------------
 # Component Parameter Setters
 # ------------------------------------------------------------------
+
 def set_PrefA(value: float, project) -> None:
     """Update the PrefA slider value."""
     slider = project.component(830232143)
     slider.parameters(Value=value)
-    print(f"[INFO] PrefA set to {value}")
-
+    print(f"[INFO] PrefA set to {value} (pu)")
 
 def set_SCL(value: float, project) -> None:
     """Update the SCL slider value."""
     slider = project.component(1715080837)
     slider.parameters(Value=value)
     print(f"[INFO] SCL set to {value}")
-
 
 def set_XR_ratio(value: float, project) -> None:
     """Update the grid X/R slider value."""
@@ -83,9 +131,9 @@ def set_inverter_size(value: float, project) -> None:
     BESS_plant1 = BESS_plant0.component(1672393785).canvas()
     inverter_size_constant = BESS_plant1.component(1643639519) 
     inverter_size_constant.parameters(Value=value)
-    print(f"[INFO] Single Inverter Sbase set to {value}")
+    print(f"[INFO] Single Inverter Sbase set to {value} (MVA)")
 
-def set_no_inverters(value: float, project) -> None:
+def set_no_inverters(value: int, project) -> None:
     """Update the number of inverters comprising BESS """
     BESS_plant0 = project.component(477036609).canvas()
     no_inverter_int = BESS_plant0.component(1834444465) 
@@ -101,6 +149,69 @@ def set_POD(value: float, project) -> None:
     POD_en_switch = converter_controls.component(2046559337) 
     POD_en_switch.parameters(Value=value)
     print(f"[INFO] POD_en set to {value}")
+
+def set_line_length(value: float, project) -> None:
+    """Update transmission line length between IBR and SMIB """
+    transmission_line = project.component(591664577)
+    transmission_line.parameters(len=value)
+    print(f"[INFO] Transmission line length set to {value} (m)")
+
+def clear_test_env(project) -> None:
+    """Clears all faults, loads, frequency conditions"""
+    # Faults and loads
+    IBR_flt_switch = project.component(1330750280)
+    IBR_flt_switch.parameters(Value = 0)
+    load_flt_switch = project.component(1967375294)
+    load_flt_switch.parameters(Value = 0)
+    grid_cb = project.component(1040814752)
+    grid_cb.parameters(Value = 0)
+    load_cb = project.component(127299003)
+    load_cb.parameters(Value = 1)
+
+    # frequency ramp disabled
+    grid_model = project.component(1186628671).canvas()
+    RoCoF_en = grid_model.component(593429605)
+    RoCoF_en.parameters(G = 0) # multiplying constant
+    print(f"[INFO] Cleared Simulation Environment")
+    
+def set_test_case_paramters(sim: Sim, project) -> None:
+    match sim.test_case:
+        case sim.ROCOF_TEST:
+            grid_model = project.component(1186628671).canvas()
+            RoCoF_en = grid_model.component(593429605)
+            RoCoF_en.parameters(G = 1) # multiplying constant
+            print(f"[INFO] RoCoF test: Enabled")
+
+        case sim.IBR_FAULT_TEST:
+            print("[INFO] IBR fault test enabled")
+            if( sim.fault_type > sim.P2P_ABC or sim.fault_type < sim.NO_FAULT ):
+                    print("[ERR] IBR Fault : Invalid fault code")
+                    return
+            IBR_flt = project.component(1330750280) # sets fault type
+            IBR_flt.parameters(Value = sim.fault_type)
+            print(f"[INFO] Set IBR Fault : {sim.fault_type}")
+            
+        case sim.LOAD_FAULT_TEST:
+            print("[INFO] Load fault test enabled")
+            if( sim.fault_type > sim.P2P_ABC or sim.fault_type < sim.NO_FAULT ):
+                    print("[ERR] Load Fault : Invalid fault code")
+                    return
+            Load_flt = project.component(1967375294) # sets fault type
+            Load_flt.parameters(Value = sim.fault_type)
+            print(f"[INFO] Set load Fault : {sim.fault_type}")
+
+        case sim.LOAD_JUMP_TEST:
+            load_cb = project.component(127299003)
+            load_cb.parameters(Value = 1)
+            print("[INFO] Load jump test enabled")
+            pload = project.component(1379641378)
+            pload.parameters(Value = sim.load_p) # (in MW)
+            pf = project.component(1806668041)
+            pf.parameters(Value = sim.load_pf)
+            print(f"[INFO] Load set : P = {sim.load_p} (MW) @ pf = {sim.load_pf}")
+        
+        case _:
+            raise ValueError(f"Unknown test case {sim.test_case}")
 
 # ------------------------------------------------------------------
 # Simulation Worker
@@ -125,7 +236,7 @@ def run_simulation(
     try:
         # --- 1. Prepare case folder -------------------------------------------------
         master = os.path.join(working_dir, f"{project_name}.pscx")
-        case = os.path.join(sim_folder, sim.test_name)
+        case = os.path.join(sim_folder, sim.sim_name)
         if os.path.exists(case):
             shutil.rmtree(case)
         os.makedirs(case)
@@ -134,12 +245,12 @@ def run_simulation(
         # --- 2. Launch PSCAD and load project ---------------------------------------
         pscad = mhi.pscad.launch(version="5.0.2", settings=settings)
         if not pscad:
-            raise RuntimeError("Failed to launch PSCAD")
+            raise RuntimeError("[ERR] Failed to launch PSCAD")
 
         pscad.load([os.path.join(case, f"{project_name}.pscx")])
         project = pscad.project(project_name)
         project.parameters(
-            output_filename=sim.test_name,
+            output_filename=sim.sim_name,
             time_duration=time_params[0],
             time_step=time_params[1],
             sample_step=time_params[2],
@@ -147,6 +258,7 @@ def run_simulation(
         main = project.canvas("Main")
 
         # --- 3. Set parameters and run ---------------------------------------------
+        clear_test_env(main)
         set_PrefA(sim.prefA, main)
         set_SCL(sim.scl, main)
         set_XR_ratio(sim.xr, main)
@@ -156,24 +268,26 @@ def run_simulation(
         set_POD(sim.POD_en, main)
         set_inverter_size(sim.inverter_size, main)
         set_no_inverters(sim.no_inverters, main)
+        set_line_length(sim.line_length, main)
+        set_test_case_paramters(sim, main)
 
-        print(f"[RUN] {sim.test_name}")
+        print(f"[RUN] {sim.sim_name}")
         project.run()
 
-        psout_path = os.path.join(case, f"{project_name}{fortran_ext}", sim.test_name)
+        psout_path = os.path.join(case, f"{project_name}{fortran_ext}", sim.sim_name)
 
         # --- 4. Signal success -------------------------------------------------------
         queue.put({
             "psout_path": psout_path,
-            "test_name": sim.test_name,
+            "test_name": sim.sim_name,
             "success": True
         })
-        print(f"[OK ] {sim.test_name} completed successfully")
+        print(f"[OK ] {sim.sim_name} completed successfully")
 
         pscad.quit()
 
     except Exception as e:
-        print(f"[ERR] {sim.test_name} failed: {e}\n")
+        print(f"[ERR] {sim.sim_name} failed: {e}\n")
         queue.put({"success": False, "error": str(e)})
 
 

@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------
-# Required Libraries
+# Required Libraries & Constants
 # ------------------------------------------------------------------
 
 import os
@@ -8,26 +8,42 @@ import time
 from multiprocessing import Process, Queue
 from pscad_utils import Sim, run_simulation, collect_results, convert_results_to_csv
 
+# TEST CASES
+ROCOF_TEST = 0
+IBR_FAULT = 1
+LOAD_FAULT = 2
+LOAD_JUMP = 3
+
+# FAULT CASES
+NO_FAULT = 0
+P2G_A = 1
+P2G_B = 2
+P2G_C = 3
+P2G_AB = 4
+P2G_AC = 5
+P2G_BC = 6
+P2G_ABC = 7
+P2P_AB = 8
+P2P_AC = 9
+P2P_BC = 10
+P2P_ABC = 11
+
 # ------------------------------------------------------------------
 # Simulation Cases and parameters
 # ------------------------------------------------------------------
-TIME_PARAMS = (5, 5, 250)  # duration (s), time-step (µs), sample-step (µs)
+
+TIME_PARAMS = (6, 5, 250)  # duration (s), time-step (µs), sample-step (µs)
 SIMULATIONS = []
 
-sim1 = Sim("D_1000")
+sim1 = Sim("Base")
 SIMULATIONS.append(sim1)
 
-sim2 = Sim('D_100')
-sim2.D = 1/100
+sim2 = Sim("LoadJump")
+sim2.set_LOAD_JUMP()
+sim2.load_p = 4
+sim2.load_pf = 1
 SIMULATIONS.append(sim2)
 
-sim3 = Sim("D_10")
-sim3.D = 1/10
-SIMULATIONS.append(sim3)
-
-sim4 = Sim("D_1")
-sim4.D = 1/1
-SIMULATIONS.append(sim4)
 # ------------------------------------------------------------------
 # Main entry-point
 # ------------------------------------------------------------------
@@ -66,7 +82,7 @@ if __name__ == "__main__":
             ),
         )
         processes.append(p)
-        print(f"[START] {simulation.test_name}")
+        print(f"[START] {simulation.sim_name}")
         p.start()
         time.sleep(5)  # stagger launches to avoid PSCAD conflicts
 

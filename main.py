@@ -12,17 +12,39 @@ from pscad_utils import Sim, run_simulation, collect_results, convert_results_to
 # Simulation Cases and parameters
 # ------------------------------------------------------------------
 
-TIME_PARAMS = (6, 5, 250)  # duration (s), time-step (µs), sample-step (µs)
+TIME_PARAMS = (5, 10, 100)  # duration (s), time-step (µs), sample-step (µs)
 SIMULATIONS = []
 
-sim1 = Sim("Base")
-SIMULATIONS.append(sim1)
+# sim1 = Sim("H2")
+# sim1.set_LOAD_JUMP()
+# sim1.load_p = 4
+# sim1.load_pf = 1
+# SIMULATIONS.append(sim1)
 
-sim2 = Sim("LoadJump")
-sim2.set_LOAD_JUMP()
-sim2.load_p = 4
-sim2.load_pf = 1
-SIMULATIONS.append(sim2)
+# sim2 =  Sim("H1_5")
+# sim2.set_LOAD_JUMP()
+# sim2.load_p = 4
+# sim2.load_pf = 1
+# sim2.H = 1.5
+# SIMULATIONS.append(sim2)
+
+# sim3 = Sim("H2_5")
+# sim3.set_LOAD_JUMP()
+# sim3.load_p = 4
+# sim3.load_pf = 1
+# sim3.H = 2.5
+# SIMULATIONS.append(sim3)
+
+for h in [1, 2, 3]:
+    for d in [250, 100]:
+        # Do something with h and d
+        sim = Sim(f"H_{h}_D_{d}")
+        sim.H = h
+        sim.D = 1/d
+        sim.set_LOAD_JUMP()
+        sim.load_p = 4
+        sim.load_pf = 1
+        SIMULATIONS.append(sim)
 
 # ------------------------------------------------------------------
 # Main entry-point

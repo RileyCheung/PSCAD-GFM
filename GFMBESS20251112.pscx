@@ -2,7 +2,7 @@
   <paramlist name="Settings">
     <param name="creator" value="farid,1755894913" />
     <param name="time_duration" value="100" />
-    <param name="time_step" value="10" />
+    <param name="time_step" value="20" />
     <param name="sample_step" value="200" />
     <param name="chatter_threshold" value=".001" />
     <param name="branch_threshold" value=".0005" />
@@ -24,7 +24,7 @@
     <param name="Check" value="0" />
     <param name="Debug" value="0" />
     <param name="description" value="" />
-    <param name="revisor" value="RileyCheung, 1768225415" />
+    <param name="revisor" value="RileyCheung, 1768233247" />
   </paramlist>
   <Layers>
     <Layer id="1409029250" classid="Layer" name="PNI" state="Enabled">
@@ -11150,7 +11150,7 @@
         </Wire>
       </schematic>
     </Definition>
-    <Definition classid="UserCmpDefn" name="Main" id="831251402" group="" url="" version="" build="" crc="9778968" view="false" date="1768225410">
+    <Definition classid="UserCmpDefn" name="Main" id="831251402" group="" url="" version="" build="" crc="20856768" view="false" date="1768231402">
       <paramlist name="">
         <param name="Description" value="" />
       </paramlist>
@@ -13977,13 +13977,6 @@
           <vertex x="0" y="0" />
           <vertex x="54" y="0" />
         </Wire>
-        <User classid="UserCmp" defn="master:monostable" id="107007027" x="846" y="666" w="80" h="59" z="900" orient="4" link="-1" layer="" q="4" disable="false">
-          <paramlist link="-1" name="" crc="121672028">
-            <param name="T" value="FltDur" />
-            <param name="INTR" value="0" />
-            <param name="Name" value="" />
-          </paramlist>
-        </User>
         <Wire classid="WireOrthogonal" id="1995401528" name="" x="684" y="666" w="136" h="10" orient="0" disable="false">
           <vertex x="0" y="0" />
           <vertex x="126" y="0" />
@@ -19421,7 +19414,7 @@
           <paramlist link="-1" name="" crc="130641473">
             <param name="NUMS" value="1" />
             <param name="INIT" value="1" />
-            <param name="TO1" value="4 [s]" />
+            <param name="TO1" value="3 [s]" />
             <param name="TO2" value="1.05 [s]" />
             <param name="Name" value="" />
           </paramlist>
@@ -23177,13 +23170,6 @@
           <vertex x="0" y="0" />
           <vertex x="54" y="0" />
         </Wire>
-        <User classid="UserCmp" defn="master:monostable" id="1643258036" x="1404" y="666" w="80" h="59" z="880" orient="4" link="-1" layer="" q="4" disable="false">
-          <paramlist link="-1" name="" crc="121672028">
-            <param name="T" value="FltDur" />
-            <param name="INTR" value="0" />
-            <param name="Name" value="" />
-          </paramlist>
-        </User>
         <Wire classid="WireOrthogonal" id="324391590" name="" x="1242" y="666" w="136" h="10" orient="0" disable="false">
           <vertex x="0" y="0" />
           <vertex x="126" y="0" />
@@ -46220,33 +46206,29 @@
             <param name="Dim" value="1" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="master:tbreakn" id="244538387" x="918" y="666" w="78" h="59" z="220" orient="0" defn="master:tbreakn" link="-1" q="4" disable="false">
-          <paramlist link="-1" name="" crc="130641473">
-            <param name="NUMS" value="1" />
-            <param name="INIT" value="1" />
-            <param name="TO1" value="5 [s]" />
-            <param name="TO2" value="1.05 [s]" />
-            <param name="Name" value="flt_delay" />
-          </paramlist>
-        </User>
         <Wire classid="WireOrthogonal" id="803397871" name="" x="1080" y="558" w="10" h="208" orient="0" disable="false">
           <vertex x="0" y="0" />
           <vertex x="0" y="198" />
         </Wire>
-        <User classid="UserCmp" name="master:tbreakn" id="267340732" x="1476" y="666" w="78" h="59" z="250" orient="0" defn="master:tbreakn" link="-1" q="4" disable="false">
-          <paramlist link="-1" name="" crc="130641473">
-            <param name="NUMS" value="1" />
-            <param name="INIT" value="1" />
-            <param name="TO1" value="5 [s]" />
-            <param name="TO2" value="1.05 [s]" />
-            <param name="Name" value="flt_delay" />
-          </paramlist>
-        </User>
         <User classid="UserCmp" id="1967375294" name="master:consti" x="1332" y="648" w="86" h="35" z="230" orient="4" defn="master:consti" link="-1" q="4" disable="false">
           <paramlist name="" link="-1" crc="74846674">
             <param name="Name" value="LOAD_flt_type" />
             <param name="Value" value="0" />
             <param name="Dim" value="1" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:tfaultn" id="754742834" x="846" y="666" w="79" h="59" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="79534367">
+            <param name="TF" value="3 [s]" />
+            <param name="DF" value="0.05 [s]" />
+            <param name="Name" value="IBR_flt_logic" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:tfaultn" id="1952267882" x="1404" y="666" w="79" h="59" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="79534367">
+            <param name="TF" value="3.0 [s]" />
+            <param name="DF" value="0.05 [s]" />
+            <param name="Name" value="LOAD_flt_logic" />
           </paramlist>
         </User>
       </schematic>
@@ -62651,7 +62633,7 @@
         </Port>
       </graphics>
     </Definition>
-    <Definition classid="UserCmpDefn" name="AllPlots" group="" url="" version="" build="" crc="31386669" instances="1" key="" view="false" date="1768225152" id="1281188104">
+    <Definition classid="UserCmpDefn" name="AllPlots" group="" url="" version="" build="" crc="78719417" instances="1" key="" view="false" date="1768225152" id="1281188104">
       <paramlist name="">
         <param name="Description" value="" />
       </paramlist>
@@ -63182,15 +63164,13 @@
           <Control classid="Switch" id="971465217" name="Load1 CB" link="127299003" />
           <Control classid="Slider" id="109125028" name="p.f. 1" link="1806668041" />
         </Frame>
-        <Frame classid="ControlFrame" id="466318659" name="" link="-1" x="216" y="666" w="324" h="414">
+        <Frame classid="ControlFrame" id="466318659" name="" link="-1" x="216" y="666" w="324" h="198">
           <paramlist link="-1">
             <param name="Icon" value="-1,-1" />
             <param name="state" value="1" />
             <param name="title" value="Fault at the load bus" />
           </paramlist>
-          <Control classid="Switch" id="1849816969" name="" link="1105110789" />
           <Control classid="Slider" id="1027398524" name="L fault" link="1660887297" />
-          <Control classid="Selector" id="1772885676" name="" link="1123838917" />
         </Frame>
         <Frame classid="ControlFrame" id="537540226" name="" link="-1" x="216" y="342" w="468" h="126">
           <paramlist link="-1">
@@ -63427,15 +63407,13 @@
             <param name="AL2" value="Pref &lt; 0 : charge" />
           </paramlist>
         </User>
-        <Frame classid="ControlFrame" id="2065488069" name="" link="-1" x="540" y="666" w="396" h="414">
+        <Frame classid="ControlFrame" id="2065488069" name="" link="-1" x="540" y="666" w="288" h="198">
           <paramlist link="-1">
             <param name="Icon" value="-1,-1" />
             <param name="state" value="1" />
             <param name="title" value="Fault at BESS 1 terminal" />
           </paramlist>
-          <Control classid="Switch" id="1847991691" name="" link="1140819631" />
           <Control classid="Slider" id="607256082" name="L fault" link="1660887297" />
-          <Control classid="Selector" id="1133959834" name="" link="1265221073" />
         </Frame>
         <Frame classid="ControlFrame" name="" x="216" y="162" w="288" h="126" id="228712245" link="-1">
           <paramlist link="-1">
@@ -254297,7 +254275,7 @@ H = inertia constant]]></Sticky>
   </definitions>
   <List classid="Resource" />
   <hierarchy>
-    <call link="2008813941" name="GFMBESS20251112:DS" z="-1" view="false" instance="0">
+    <call link="461940774" name="GFMBESS20251112:DS" z="-1" view="false" instance="0">
       <call link="69476381" name="GFMBESS20251112:Main" z="-1" view="true" instance="0">
         <call link="1585416183" name="GFMBESS20251112:AllPlots" z="30" view="false" instance="0" />
         <call link="1522488531" name="GFMBESS20251112:Synchronizer_1_1" z="740" view="false" instance="0" />

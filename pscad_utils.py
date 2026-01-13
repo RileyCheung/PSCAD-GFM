@@ -27,7 +27,9 @@ class Sim:
             POD_en = 0, 
             line_length = 1, 
             test_case = 0, # default ROCOF test
-            fault_type = 1
+            fault_type = 1,
+            fault_time = 4,
+            fault_duration = 0.05,
             ):
         self.sim_name = sim_name
         self.prefA = prefA # plant acitve power setpoint (pu)
@@ -43,6 +45,8 @@ class Sim:
         
         self.test_case = test_case # rocof, fault, etc
         self.fault_type = fault_type # used for both ibr and load faults
+        self.fault_time = fault_time
+        self.fault_duration = fault_duration
         self.load_p = 1 # load value (MW)
         self.load_pf = 1 # power factor of load
 
@@ -73,7 +77,6 @@ class Sim:
         self.test_case = self.LOAD_FAULT_TEST
     def set_LOAD_JUMP(self):
         self.test_case = self.LOAD_JUMP_TEST
-
 # ------------------------------------------------------------------
 # Component Parameter Setters
 # ------------------------------------------------------------------
@@ -189,6 +192,8 @@ def set_test_case_paramters(sim: Sim, project) -> None:
                     return
             IBR_flt = project.component(1330750280) # sets fault type
             IBR_flt.parameters(Value = sim.fault_type)
+            IBR_flt_logic = project.component(754742834)
+            IBR_flt_logic.parameters(TF = sim.fault_time, DF = sim.fault_duration)
             print(f"[INFO] Set IBR Fault : {sim.fault_type}")
             
         case sim.LOAD_FAULT_TEST:
@@ -198,11 +203,13 @@ def set_test_case_paramters(sim: Sim, project) -> None:
                     return
             Load_flt = project.component(1967375294) # sets fault type
             Load_flt.parameters(Value = sim.fault_type)
+            LOAD_flt_logic = project.component(1952267882)
+            LOAD_flt_logic.parameters(TF = sim.fault_time, DF = sim.fault_duration)
             print(f"[INFO] Set load Fault : {sim.fault_type}")
 
         case sim.LOAD_JUMP_TEST:
             load_cb = project.component(127299003)
-            load_cb.parameters(Value = 1)
+            load_cb.parameters(Value = 0)
             print("[INFO] Load jump test enabled")
             pload = project.component(1379641378)
             pload.parameters(Value = sim.load_p) # (in MW)

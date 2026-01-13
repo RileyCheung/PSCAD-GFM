@@ -18,7 +18,7 @@ PROJECT_NAME = "GFMBESS"
 TIME_PARAMS = (5, 10, 100)  # duration (s), time-step (µs), sample-step (µs)
 SIMULATIONS = []
 
-for h in [2]:
+for h in [2, 3]:
     for d in [10000, 1000, 100]:
         # Do something with h and d
         sim = Sim(f"H_{h}_D_{d}")

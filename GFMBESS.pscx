@@ -1,4 +1,4 @@
-<project name="GFMBESS20251112" version="5.0.2" schema="" Target="EMTDC">
+<project name="GFMBESS" version="5.0.2" schema="" Target="EMTDC">
   <paramlist name="Settings">
     <param name="creator" value="farid,1755894913" />
     <param name="time_duration" value="100" />
@@ -24,7 +24,7 @@
     <param name="Check" value="0" />
     <param name="Debug" value="0" />
     <param name="description" value="" />
-    <param name="revisor" value="RileyCheung, 1768287028" />
+    <param name="revisor" value="RileyCheung, 1768291064" />
   </paramlist>
   <Layers>
     <Layer id="1409029250" classid="Layer" name="PNI" state="Enabled">
@@ -11119,7 +11119,7 @@
         </User>
       </schematic>
     </Definition>
-    <Definition classid="StationDefn" name="DS" id="1540863819" group="" url="" version="" build="" crc="8030701" view="false">
+    <Definition classid="StationDefn" name="DS" id="1540863819" group="" url="" version="" build="" crc="691682" view="false">
       <paramlist name="">
         <param name="Description" value="" />
       </paramlist>
@@ -11144,13 +11144,13 @@
           <vertex x="0" y="18" />
           <vertex x="54" y="54" />
           <vertex x="54" y="72" />
-          <User classid="UserCmp" id="69476381" name="GFMBESS20251112:Main" x="0" y="0" w="0" h="0" z="-1" orient="0" defn="GFMBESS20251112:Main" link="-1" q="4" disable="false">
+          <User classid="UserCmp" id="69476381" name="GFMBESS:Main" x="0" y="0" w="0" h="0" z="-1" orient="0" defn="GFMBESS:Main" link="-1" q="4" disable="false">
             <paramlist name="" link="-1" crc="4361682" />
           </User>
         </Wire>
       </schematic>
     </Definition>
-    <Definition classid="UserCmpDefn" name="Main" id="831251402" group="" url="" version="" build="" crc="20856768" view="false" date="1768231402">
+    <Definition classid="UserCmpDefn" name="Main" id="831251402" group="" url="" version="" build="" crc="99725295" view="false" date="1768231402">
       <paramlist name="">
         <param name="Description" value="" />
       </paramlist>
@@ -13985,7 +13985,7 @@
           <vertex x="0" y="0" />
           <vertex x="0" y="-54" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:Load" id="74139314" x="1080" y="900" w="64" h="80" z="850" orient="4" defn="GFMBESS20251112:Load" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:Load" id="74139314" x="1080" y="900" w="64" h="80" z="850" orient="4" defn="GFMBESS:Load" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="77211280">
             <param name="VLoad" value="33 [kV]" />
             <param name="Freq" value="50 [Hz]" />
@@ -23065,7 +23065,7 @@
             <param name="AL2" value="GFM, operating in V/f mode (No separate power control loop)" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:AllPlots" id="1585416183" x="324" y="306" w="106" h="135" z="30" orient="0" defn="GFMBESS20251112:AllPlots" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:AllPlots" id="1585416183" x="324" y="306" w="106" h="135" z="30" orient="0" defn="GFMBESS:AllPlots" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="85637438">
             <param name="Name" value="" />
           </paramlist>
@@ -23174,7 +23174,7 @@
           <vertex x="0" y="0" />
           <vertex x="126" y="0" />
         </Wire>
-        <User classid="UserCmp" id="1186628671" name="GFMBESS20251112:Grid_1" x="1620" y="468" w="119" h="44" z="950" orient="4" defn="GFMBESS20251112:Grid_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" id="1186628671" name="GFMBESS:Grid_1" x="1620" y="468" w="119" h="44" z="950" orient="4" defn="GFMBESS:Grid_1" link="-1" q="4" disable="false">
           <paramlist name="" link="-1" crc="66811581">
             <param name="Name" value="Grid_1" />
             <param name="GridVoltage" value="Vth" />
@@ -37384,7 +37384,7 @@
             <param name="Inv9" value="0" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:Synchronizer_1_1" id="1522488531" x="2502" y="234" w="146" h="104" z="740" orient="0" defn="GFMBESS20251112:Synchronizer_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:Synchronizer_1_1" id="1522488531" x="2502" y="234" w="146" h="104" z="740" orient="0" defn="GFMBESS:Synchronizer_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="36350705">
             <param name="Name" value="Synchronizer_1_1" />
             <param name="Vbase" value="Vbase" />
@@ -40463,7 +40463,7 @@
           <vertex x="0" y="-18" />
           <vertex x="90" y="-18" />
         </Wire>
-        <User classid="UserCmp" id="477036609" name="GFMBESS20251112:BESSGFM_VirtImp" x="342" y="468" w="72" h="56" z="970" orient="0" defn="GFMBESS20251112:BESSGFM_VirtImp" link="-1" q="4" disable="false">
+        <User classid="UserCmp" id="477036609" name="GFMBESS:BESSGFM_VirtImp" x="342" y="468" w="72" h="56" z="970" orient="0" defn="GFMBESS:BESSGFM_VirtImp" link="-1" q="4" disable="false">
           <paramlist name="" link="-1" crc="105257550">
             <param name="Master" value="MasterA" />
             <param name="PMode" value="PModeA" />
@@ -54837,7 +54837,7 @@
         </Gfx>
       </graphics>
     </Definition>
-    <Definition classid="UserCmpDefn" name="BESS_2LvlVSC_1" group="" url="" version="" build="" crc="32840229" instances="1" key="" view="false" date="1761241963" id="913607903">
+    <Definition classid="UserCmpDefn" name="BESS_2LvlVSC_1" group="" url="" version="" build="" crc="119437168" instances="1" key="" view="false" date="1761241963" id="913607903">
       <paramlist name="">
         <param name="Description" value="" />
       </paramlist>
@@ -56007,7 +56007,7 @@
           <vertex x="0" y="0" />
           <vertex x="180" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:Conv_to_pu3_1" id="2129789502" x="684" y="612" w="116" h="57" z="470" orient="0" defn="GFMBESS20251112:Conv_to_pu3_1" link="-1" q="4" layer="" disable="false">
+        <User classid="UserCmp" name="GFMBESS:Conv_to_pu3_1" id="2129789502" x="684" y="612" w="116" h="57" z="470" orient="0" defn="GFMBESS:Conv_to_pu3_1" link="-1" q="4" layer="" disable="false">
           <paramlist link="-1" name="" crc="98612238">
             <param name="Name" value="" />
             <param name="BDenom" value="IacBASE_pk" />
@@ -56041,7 +56041,7 @@
           <vertex x="0" y="0" />
           <vertex x="18" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:Conv_to_pu3_1" id="938673740" x="684" y="558" w="116" h="57" z="440" orient="0" defn="GFMBESS20251112:Conv_to_pu3_1" link="-1" q="4" layer="" disable="false">
+        <User classid="UserCmp" name="GFMBESS:Conv_to_pu3_1" id="938673740" x="684" y="558" w="116" h="57" z="440" orient="0" defn="GFMBESS:Conv_to_pu3_1" link="-1" q="4" layer="" disable="false">
           <paramlist link="-1" name="" crc="98612238">
             <param name="Name" value="" />
             <param name="BDenom" value="VacBASE_pk" />
@@ -56678,7 +56678,7 @@
             <param name="Name" value="PMode" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:BESS_Controls_VirtIp" defn="GFMBESS20251112:BESS_Controls_VirtIp" id="1642673320" x="630" y="360" w="141" h="134" z="600" orient="4" link="-1" q="4" disable="true">
+        <User classid="UserCmp" name="GFMBESS:BESS_Controls_VirtIp" defn="GFMBESS:BESS_Controls_VirtIp" id="1642673320" x="630" y="360" w="141" h="134" z="600" orient="4" link="-1" q="4" disable="true">
           <paramlist link="-1" name="" crc="52551776">
             <param name="DBlk" value="Dblk" />
             <param name="VdcRef" value="VdcRef" />
@@ -56920,7 +56920,7 @@
         </Gfx>
       </graphics>
     </Definition>
-    <Definition classid="UserCmpDefn" name="BESS_1" group="" url="" version="" build="" crc="108062495" instances="0" key="" view="false" date="1761241963" id="1187962211">
+    <Definition classid="UserCmpDefn" name="BESS_1" group="" url="" version="" build="" crc="19894337" instances="0" key="" view="false" date="1761241963" id="1187962211">
       <paramlist name="">
         <param name="Description" value="" />
       </paramlist>
@@ -57007,7 +57007,7 @@
           <vertex x="0" y="0" />
           <vertex x="72" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:BESS_2LvlVSC_1" id="1934071406" x="378" y="144" w="104" h="116" z="400" orient="4" defn="GFMBESS20251112:BESS_2LvlVSC_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:BESS_2LvlVSC_1" id="1934071406" x="378" y="144" w="104" h="116" z="400" orient="4" defn="GFMBESS:BESS_2LvlVSC_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="41635776">
             <param name="IdMax" value="1" />
             <param name="IdMin" value="-1" />
@@ -59792,7 +59792,7 @@
         </Gfx>
       </graphics>
     </Definition>
-    <Definition classid="UserCmpDefn" name="BESSGFM" build="" crc="89120263" view="false" instances="0" date="1761241963" id="1377159898" w="320" h="400" url="" group="">
+    <Definition classid="UserCmpDefn" name="BESSGFM" build="" crc="65798623" view="false" instances="0" date="1761241963" id="1377159898" w="320" h="400" url="" group="">
       <paramlist>
         <param name="Description" value="" />
       </paramlist>
@@ -60749,7 +60749,7 @@
           <vertex x="0" y="0" />
           <vertex x="0" y="36" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:BESS_1" id="1349845218" x="144" y="126" w="167" h="120" z="360" orient="0" defn="GFMBESS20251112:BESS_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:BESS_1" id="1349845218" x="144" y="126" w="167" h="120" z="360" orient="0" defn="GFMBESS:BESS_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="85434974">
             <param name="Name" value="" />
             <param name="dVacRef" value="dVrefBESS1" />
@@ -60791,7 +60791,7 @@
             <param name="ymax" value="0.5" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:Synchronizer_1_1" id="1022301619" x="252" y="648" w="146" h="104" z="280" orient="0" defn="GFMBESS20251112:Synchronizer_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:Synchronizer_1_1" id="1022301619" x="252" y="648" w="146" h="104" z="280" orient="0" defn="GFMBESS:Synchronizer_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="36350705">
             <param name="Name" value="Synchronizer_1_1" />
             <param name="Vbase" value="33" />
@@ -70214,7 +70214,7 @@ I believe this is just for stability purposes]]></Sticky>
         </User>
       </schematic>
     </Definition>
-    <Definition classid="UserCmpDefn" name="BESSGFM_VirtImp" build="" crc="63964726" view="false" instances="0" date="1768225152" id="1768630705" w="320" h="400" url="" group="">
+    <Definition classid="UserCmpDefn" name="BESSGFM_VirtImp" build="" crc="3916093" view="false" instances="0" date="1768225152" id="1768630705" w="320" h="400" url="" group="">
       <paramlist>
         <param name="Description" value="" />
       </paramlist>
@@ -71171,7 +71171,7 @@ I believe this is just for stability purposes]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="0" y="36" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:Synchronizer_1_1" id="1004414084" x="252" y="648" w="146" h="104" z="290" orient="0" defn="GFMBESS20251112:Synchronizer_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:Synchronizer_1_1" id="1004414084" x="252" y="648" w="146" h="104" z="290" orient="0" defn="GFMBESS:Synchronizer_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="36350705">
             <param name="Name" value="Synchronizer_1_1" />
             <param name="Vbase" value="33" />
@@ -72472,7 +72472,7 @@ I believe this is just for stability purposes]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="18" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:BESS_1_1" id="1672393785" x="144" y="126" w="167" h="120" z="380" orient="0" defn="GFMBESS20251112:BESS_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:BESS_1_1" id="1672393785" x="144" y="126" w="167" h="120" z="380" orient="0" defn="GFMBESS:BESS_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="85434974">
             <param name="Name" value="" />
             <param name="dVacRef" value="dVrefBESS1" />
@@ -81385,7 +81385,7 @@ I believe this is just for stability purposes]]></Sticky>
         </Gfx>
       </graphics>
     </Definition>
-    <Definition classid="UserCmpDefn" name="BESS_Controls_VirtIp" group="" url="" version="" build="" crc="9730788" instances="1" key="" view="false" date="1761845154" id="730275351">
+    <Definition classid="UserCmpDefn" name="BESS_Controls_VirtIp" group="" url="" version="" build="" crc="124437801" instances="1" key="" view="false" date="1761845154" id="730275351">
       <paramlist>
         <param name="Description" value="" />
       </paramlist>
@@ -95699,7 +95699,7 @@ Generate switching pulses]]></Sticky>
             <param name="Name" value="Iabc" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:PNExtract_3_2_1" id="1521183964" x="1350" y="306" w="170" h="71" z="1320" orient="0" defn="GFMBESS20251112:PNExtract_3_2_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PNExtract_3_2_1" id="1521183964" x="1350" y="306" w="170" h="71" z="1320" orient="0" defn="GFMBESS:PNExtract_3_2_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="9954461">
             <param name="Name" value="" />
             <param name="Freq" value="1" />
@@ -95724,7 +95724,7 @@ Generate switching pulses]]></Sticky>
             <param name="Name" value="Eabc" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:PNExtract_3_2_1" id="534467675" x="1350" y="234" w="170" h="71" z="1270" orient="0" defn="GFMBESS20251112:PNExtract_3_2_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PNExtract_3_2_1" id="534467675" x="1350" y="234" w="170" h="71" z="1270" orient="0" defn="GFMBESS:PNExtract_3_2_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="9954461">
             <param name="Name" value="" />
             <param name="Freq" value="1" />
@@ -103329,7 +103329,7 @@ Generate switching pulses]]></Sticky>
             <param name="Name" value="theta" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:myIntegrator_2_1_1_1" id="1482582862" x="756" y="342" w="80" h="62" z="1660" orient="0" defn="GFMBESS20251112:myIntegrator_2_1_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:myIntegrator_2_1_1_1" id="1482582862" x="756" y="342" w="80" h="62" z="1660" orient="0" defn="GFMBESS:myIntegrator_2_1_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="29913419">
             <param name="Name" value="" />
             <param name="y0" value="0" />
@@ -103688,7 +103688,7 @@ Generate switching pulses]]></Sticky>
           <vertex x="36" y="0" />
           <vertex x="36" y="-72" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:PIwithFreeze_3_1_1_1" id="765541920" x="954" y="1728" w="91" h="82" z="1710" orient="0" defn="GFMBESS20251112:PIwithFreeze_3_1_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PIwithFreeze_3_1_1_1" id="765541920" x="954" y="1728" w="91" h="82" z="1710" orient="0" defn="GFMBESS:PIwithFreeze_3_1_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="20317870">
             <param name="Name" value="" />
             <param name="Kp" value="Kpdq_N" />
@@ -103702,7 +103702,7 @@ Generate switching pulses]]></Sticky>
             <param name="KawOut" value="1" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:PIwithFreeze_3_1_1_1" id="1148504690" x="972" y="1908" w="91" h="82" z="1780" orient="0" defn="GFMBESS20251112:PIwithFreeze_3_1_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PIwithFreeze_3_1_1_1" id="1148504690" x="972" y="1908" w="91" h="82" z="1780" orient="0" defn="GFMBESS:PIwithFreeze_3_1_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="20317870">
             <param name="Name" value="" />
             <param name="Kp" value="Kpdq_N" />
@@ -103734,7 +103734,7 @@ Generate switching pulses]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="18" y="0" />
         </Wire>
-        <User classid="UserCmp" id="1647496180" name="GFMBESS20251112:POD_1_1" x="216" y="468" w="116" h="69" z="1500" orient="0" defn="GFMBESS20251112:POD_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" id="1647496180" name="GFMBESS:POD_1_1" x="216" y="468" w="116" h="69" z="1500" orient="0" defn="GFMBESS:POD_1_1" link="-1" q="4" disable="false">
           <paramlist name="" link="-1" crc="14242604">
             <param name="Name" value="" />
           </paramlist>
@@ -103920,7 +103920,7 @@ Generate switching pulses]]></Sticky>
             <param name="Name" value="" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:PIwithFreeze_3_1_1_1" id="909886158" x="738" y="810" w="91" h="82" z="1940" orient="0" defn="GFMBESS20251112:PIwithFreeze_3_1_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PIwithFreeze_3_1_1_1" id="909886158" x="738" y="810" w="91" h="82" z="1940" orient="0" defn="GFMBESS:PIwithFreeze_3_1_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="20317870">
             <param name="Name" value="" />
             <param name="Kp" value="KpVm" />
@@ -104004,19 +104004,19 @@ Generate switching pulses]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="36" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:MovAvg_3_1" id="1964331427" x="1800" y="324" w="80" h="29" z="2710" orient="0" defn="GFMBESS20251112:MovAvg_3_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:MovAvg_3_1" id="1964331427" x="1800" y="324" w="80" h="29" z="2710" orient="0" defn="GFMBESS:MovAvg_3_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="69479511">
             <param name="Name" value="MovAvg_1" />
             <param name="Freq" value="500 [Hz]" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:MovAvg_3_1" id="467618599" x="1800" y="342" w="80" h="29" z="2700" orient="0" defn="GFMBESS20251112:MovAvg_3_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:MovAvg_3_1" id="467618599" x="1800" y="342" w="80" h="29" z="2700" orient="0" defn="GFMBESS:MovAvg_3_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="69479511">
             <param name="Name" value="MovAvg_1" />
             <param name="Freq" value="500 [Hz]" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:MovAvg_3_1" id="994791250" x="1674" y="36" w="80" h="29" z="2730" orient="0" defn="GFMBESS20251112:MovAvg_3_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:MovAvg_3_1" id="994791250" x="1674" y="36" w="80" h="29" z="2730" orient="0" defn="GFMBESS:MovAvg_3_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="69479511">
             <param name="Name" value="MovAvg_1" />
             <param name="Freq" value="100 [Hz]" />
@@ -104323,7 +104323,7 @@ Generate switching pulses]]></Sticky>
             <param name="Name" value="" />
           </paramlist>
         </User>
-        <User classid="UserCmp" id="347421528" name="GFMBESS20251112:PIwithFreeze_3_1_1_1" x="990" y="1206" w="91" h="82" z="2350" orient="0" defn="GFMBESS20251112:PIwithFreeze_3_1_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" id="347421528" name="GFMBESS:PIwithFreeze_3_1_1_1" x="990" y="1206" w="91" h="82" z="2350" orient="0" defn="GFMBESS:PIwithFreeze_3_1_1_1" link="-1" q="4" disable="false">
           <paramlist name="" link="-1" crc="20317870">
             <param name="Name" value="" />
             <param name="Kp" value="Kpd_isl" />
@@ -104343,7 +104343,7 @@ Generate switching pulses]]></Sticky>
             <param name="ymax" value="1" />
           </paramlist>
         </User>
-        <User classid="UserCmp" id="236661071" name="GFMBESS20251112:PIwithFreeze_3_1_1_1" x="1008" y="1386" w="91" h="82" z="2160" orient="0" defn="GFMBESS20251112:PIwithFreeze_3_1_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" id="236661071" name="GFMBESS:PIwithFreeze_3_1_1_1" x="1008" y="1386" w="91" h="82" z="2160" orient="0" defn="GFMBESS:PIwithFreeze_3_1_1_1" link="-1" q="4" disable="false">
           <paramlist name="" link="-1" crc="20317870">
             <param name="Name" value="" />
             <param name="Kp" value="Kpq_isl" />
@@ -104390,13 +104390,13 @@ Generate switching pulses]]></Sticky>
             <param name="Dim" value="1" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:MovAvg_2_1_1" id="1913959311" x="1980" y="396" w="80" h="29" z="450" orient="0" defn="GFMBESS20251112:MovAvg_2_1_1" link="-1" q="4" disable="true">
+        <User classid="UserCmp" name="GFMBESS:MovAvg_2_1_1" id="1913959311" x="1980" y="396" w="80" h="29" z="450" orient="0" defn="GFMBESS:MovAvg_2_1_1" link="-1" q="4" disable="true">
           <paramlist link="-1" name="" crc="69479511">
             <param name="Name" value="MovAvg_1_1" />
             <param name="Freq" value="750 [Hz]" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:MovAvg_2_1_1" id="598177885" x="1908" y="396" w="80" h="29" z="430" orient="0" defn="GFMBESS20251112:MovAvg_2_1_1" link="-1" q="4" disable="true">
+        <User classid="UserCmp" name="GFMBESS:MovAvg_2_1_1" id="598177885" x="1908" y="396" w="80" h="29" z="430" orient="0" defn="GFMBESS:MovAvg_2_1_1" link="-1" q="4" disable="true">
           <paramlist link="-1" name="" crc="69479511">
             <param name="Name" value="MovAvg_1_1" />
             <param name="Freq" value="750 [Hz]" />
@@ -110773,7 +110773,7 @@ Generate switching pulses]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="36" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:PIwithFreeze_2_1_1" id="860342702" x="288" y="54" w="87" h="82" z="1530" orient="6" defn="GFMBESS20251112:PIwithFreeze_2_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PIwithFreeze_2_1_1" id="860342702" x="288" y="54" w="87" h="82" z="1530" orient="6" defn="GFMBESS:PIwithFreeze_2_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="20115491">
             <param name="Name" value="" />
             <param name="Kp" value="KpP" />
@@ -121870,7 +121870,7 @@ Generate switching pulses]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="36" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:PIwithFreeze_3_1_1_1" id="1964577906" x="522" y="1926" w="91" h="82" z="1960" orient="0" defn="GFMBESS20251112:PIwithFreeze_3_1_1_1" link="-1" q="4" disable="true">
+        <User classid="UserCmp" name="GFMBESS:PIwithFreeze_3_1_1_1" id="1964577906" x="522" y="1926" w="91" h="82" z="1960" orient="0" defn="GFMBESS:PIwithFreeze_3_1_1_1" link="-1" q="4" disable="true">
           <paramlist link="-1" name="" crc="20317870">
             <param name="Name" value="" />
             <param name="Kp" value="KpZv" />
@@ -133453,7 +133453,7 @@ Generate switching pulses]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="36" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:PIwithFreeze_2_1_3_1" id="255239428" x="576" y="162" w="87" h="82" z="1630" orient="6" defn="GFMBESS20251112:PIwithFreeze_2_1_3_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PIwithFreeze_2_1_3_1" id="255239428" x="576" y="162" w="87" h="82" z="1630" orient="6" defn="GFMBESS:PIwithFreeze_2_1_3_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="20115491">
             <param name="Name" value="" />
             <param name="Kp" value="KpGOV" />
@@ -136726,7 +136726,7 @@ Generate switching pulses]]></Sticky>
             <param name="Dim" value="1" />
           </paramlist>
         </User>
-        <User classid="UserCmp" id="1565097586" name="GFMBESS20251112:DeadBandFM" x="306" y="2304" w="80" h="55" z="2020" orient="0" defn="GFMBESS20251112:DeadBandFM" link="-1" q="4" disable="false">
+        <User classid="UserCmp" id="1565097586" name="GFMBESS:DeadBandFM" x="306" y="2304" w="80" h="55" z="2020" orient="0" defn="GFMBESS:DeadBandFM" link="-1" q="4" disable="false">
           <paramlist name="" link="-1" crc="36097623">
             <param name="DB" value="0.1" />
           </paramlist>
@@ -136757,7 +136757,7 @@ Generate switching pulses]]></Sticky>
             <param name="Name" value="VpMag" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:MovAvg_3_3" id="237367507" x="180" y="2358" w="80" h="29" z="1970" orient="0" defn="GFMBESS20251112:MovAvg_3_3" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:MovAvg_3_3" id="237367507" x="180" y="2358" w="80" h="29" z="1970" orient="0" defn="GFMBESS:MovAvg_3_3" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="69479511">
             <param name="Name" value="MovAvg_1" />
             <param name="Freq" value="25 [Hz]" />
@@ -139821,13 +139821,13 @@ Generate switching pulses]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="108" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:MovAvg_3_1" id="1052977382" x="2160" y="306" w="80" h="29" z="2650" orient="0" defn="GFMBESS20251112:MovAvg_3_1" link="-1" q="4" disable="true">
+        <User classid="UserCmp" name="GFMBESS:MovAvg_3_1" id="1052977382" x="2160" y="306" w="80" h="29" z="2650" orient="0" defn="GFMBESS:MovAvg_3_1" link="-1" q="4" disable="true">
           <paramlist link="-1" name="" crc="69479511">
             <param name="Name" value="MovAvg_1" />
             <param name="Freq" value="500 [Hz]" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:MovAvg_3_1" id="832315458" x="2142" y="324" w="80" h="29" z="2640" orient="0" defn="GFMBESS20251112:MovAvg_3_1" link="-1" q="4" disable="true">
+        <User classid="UserCmp" name="GFMBESS:MovAvg_3_1" id="832315458" x="2142" y="324" w="80" h="29" z="2640" orient="0" defn="GFMBESS:MovAvg_3_1" link="-1" q="4" disable="true">
           <paramlist link="-1" name="" crc="69479511">
             <param name="Name" value="MovAvg_1" />
             <param name="Freq" value="500 [Hz]" />
@@ -157105,7 +157105,7 @@ Generate switching pulses]]></Sticky>
         </Gfx>
       </graphics>
     </Definition>
-    <Definition classid="UserCmpDefn" name="BESS_2LvlVSC_1_1" group="" url="" version="" build="" crc="88409448" instances="1" key="" view="false" date="1768225152" id="1335984950">
+    <Definition classid="UserCmpDefn" name="BESS_2LvlVSC_1_1" group="" url="" version="" build="" crc="39170195" instances="1" key="" view="false" date="1768225152" id="1335984950">
       <paramlist name="">
         <param name="Description" value="" />
       </paramlist>
@@ -158275,7 +158275,7 @@ Generate switching pulses]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="180" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:Conv_to_pu3_1_1" id="1693270731" x="684" y="612" w="116" h="57" z="480" orient="0" defn="GFMBESS20251112:Conv_to_pu3_1_1" link="-1" q="4" layer="" disable="false">
+        <User classid="UserCmp" name="GFMBESS:Conv_to_pu3_1_1" id="1693270731" x="684" y="612" w="116" h="57" z="480" orient="0" defn="GFMBESS:Conv_to_pu3_1_1" link="-1" q="4" layer="" disable="false">
           <paramlist link="-1" name="" crc="98612238">
             <param name="Name" value="" />
             <param name="BDenom" value="IacBASE_pk" />
@@ -158309,7 +158309,7 @@ Generate switching pulses]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="18" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:Conv_to_pu3_1_1" id="504392661" x="684" y="558" w="116" h="57" z="450" orient="0" defn="GFMBESS20251112:Conv_to_pu3_1_1" link="-1" q="4" layer="" disable="false">
+        <User classid="UserCmp" name="GFMBESS:Conv_to_pu3_1_1" id="504392661" x="684" y="558" w="116" h="57" z="450" orient="0" defn="GFMBESS:Conv_to_pu3_1_1" link="-1" q="4" layer="" disable="false">
           <paramlist link="-1" name="" crc="98612238">
             <param name="Name" value="" />
             <param name="BDenom" value="VacBASE_pk" />
@@ -158484,7 +158484,7 @@ Generate switching pulses]]></Sticky>
             <param name="DPath" value="1" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:BESS_LC_filter_1_1" id="973937663" x="396" y="144" w="124" h="122" z="550" orient="0" defn="GFMBESS20251112:BESS_LC_filter_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:BESS_LC_filter_1_1" id="973937663" x="396" y="144" w="124" h="122" z="550" orient="0" defn="GFMBESS:BESS_LC_filter_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="1024622">
             <param name="Filter_Calc" value="1" />
             <param name="Ldamp_in" value="0.000621 [H]" />
@@ -161651,7 +161651,7 @@ Generate switching pulses]]></Sticky>
             <param name="Collect" value="1" />
           </paramlist>
         </User>
-        <User classid="UserCmp" id="952269080" name="GFMBESS20251112:BESS_GFMCtrl_VImp2_1" x="108" y="396" w="142" h="136" z="610" orient="4" defn="GFMBESS20251112:BESS_GFMCtrl_VImp2_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" id="952269080" name="GFMBESS:BESS_GFMCtrl_VImp2_1" x="108" y="396" w="142" h="136" z="610" orient="4" defn="GFMBESS:BESS_GFMCtrl_VImp2_1" link="-1" q="4" disable="false">
           <paramlist name="" link="-1" crc="52551776">
             <param name="Vacref" value="VacRef" />
             <param name="Pref" value="Pref" />
@@ -161919,7 +161919,7 @@ Generate switching pulses]]></Sticky>
         </Gfx>
       </graphics>
     </Definition>
-    <Definition classid="UserCmpDefn" name="BESS_1_1" group="" url="" version="" build="" crc="20366699" instances="0" key="" view="false" date="1768225152" id="1319662821">
+    <Definition classid="UserCmpDefn" name="BESS_1_1" group="" url="" version="" build="" crc="122290375" instances="0" key="" view="false" date="1768225152" id="1319662821">
       <paramlist name="">
         <param name="Description" value="" />
       </paramlist>
@@ -162006,7 +162006,7 @@ Generate switching pulses]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="72" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:BESS_2LvlVSC_1_1" id="102488955" x="378" y="144" w="104" h="116" z="430" orient="4" defn="GFMBESS20251112:BESS_2LvlVSC_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:BESS_2LvlVSC_1_1" id="102488955" x="378" y="144" w="104" h="116" z="430" orient="4" defn="GFMBESS:BESS_2LvlVSC_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="41635776">
             <param name="IdMax" value="1" />
             <param name="IdMin" value="-1" />
@@ -189685,7 +189685,7 @@ Sqrt(2/3) converts the V_LL to V3ph_peak
         </Gfx>
       </graphics>
     </Definition>
-    <Definition classid="UserCmpDefn" name="BESS_GFMCtrl_VImp2_1" group="" url="" version="" build="" crc="25329896" instances="1" key="" view="false" date="1768225328" id="1327945046">
+    <Definition classid="UserCmpDefn" name="BESS_GFMCtrl_VImp2_1" group="" url="" version="" build="" crc="3288933" instances="1" key="" view="false" date="1768225328" id="1327945046">
       <paramlist>
         <param name="Description" value="" />
       </paramlist>
@@ -202583,7 +202583,7 @@ Generate switching pulses]]></Sticky>
             <param name="Name" value="Iabc" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:PNExtract_3_2_3_1_1" id="1909317674" x="1332" y="306" w="170" h="71" z="1190" orient="0" defn="GFMBESS20251112:PNExtract_3_2_3_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PNExtract_3_2_3_1_1" id="1909317674" x="1332" y="306" w="170" h="71" z="1190" orient="0" defn="GFMBESS:PNExtract_3_2_3_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="9954461">
             <param name="Name" value="" />
             <param name="Freq" value="1" />
@@ -202608,7 +202608,7 @@ Generate switching pulses]]></Sticky>
             <param name="Name" value="Eabc" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:PNExtract_3_2_3_1_1" id="95829368" x="1350" y="234" w="170" h="71" z="1150" orient="0" defn="GFMBESS20251112:PNExtract_3_2_3_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PNExtract_3_2_3_1_1" id="95829368" x="1350" y="234" w="170" h="71" z="1150" orient="0" defn="GFMBESS:PNExtract_3_2_3_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="9954461">
             <param name="Name" value="" />
             <param name="Freq" value="1" />
@@ -209443,7 +209443,7 @@ Generate switching pulses]]></Sticky>
             <param name="DPath" value="1" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:PIwithFreeze_2_1_3_1_1" id="2037281674" x="630" y="162" w="87" h="82" z="1510" orient="6" defn="GFMBESS20251112:PIwithFreeze_2_1_3_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PIwithFreeze_2_1_3_1_1" id="2037281674" x="630" y="162" w="87" h="82" z="1510" orient="6" defn="GFMBESS:PIwithFreeze_2_1_3_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="20115491">
             <param name="Name" value="" />
             <param name="Kp" value="KpGOV" />
@@ -214851,7 +214851,7 @@ Generate switching pulses]]></Sticky>
             <param name="Name" value="theta" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:myIntegrator_2_1_1_3_1_1" id="1044607425" x="792" y="342" w="80" h="62" z="1540" orient="0" defn="GFMBESS20251112:myIntegrator_2_1_1_3_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:myIntegrator_2_1_1_3_1_1" id="1044607425" x="792" y="342" w="80" h="62" z="1540" orient="0" defn="GFMBESS:myIntegrator_2_1_1_3_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="29913419">
             <param name="Name" value="" />
             <param name="y0" value="0" />
@@ -215213,7 +215213,7 @@ Generate switching pulses]]></Sticky>
           <vertex x="36" y="0" />
           <vertex x="36" y="-72" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:PIwithFreeze_3_1_1_3_1_1" id="259955630" x="1008" y="1530" w="91" h="82" z="1610" orient="0" defn="GFMBESS20251112:PIwithFreeze_3_1_1_3_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PIwithFreeze_3_1_1_3_1_1" id="259955630" x="1008" y="1530" w="91" h="82" z="1610" orient="0" defn="GFMBESS:PIwithFreeze_3_1_1_3_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="20317870">
             <param name="Name" value="" />
             <param name="Kp" value="Kpdq_N" />
@@ -215227,7 +215227,7 @@ Generate switching pulses]]></Sticky>
             <param name="KawOut" value="1" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:PIwithFreeze_3_1_1_3_1_1" id="303119506" x="1026" y="1710" w="91" h="82" z="1680" orient="0" defn="GFMBESS20251112:PIwithFreeze_3_1_1_3_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PIwithFreeze_3_1_1_3_1_1" id="303119506" x="1026" y="1710" w="91" h="82" z="1680" orient="0" defn="GFMBESS:PIwithFreeze_3_1_1_3_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="20317870">
             <param name="Name" value="" />
             <param name="Kp" value="Kpdq_N" />
@@ -215259,7 +215259,7 @@ Generate switching pulses]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="18" y="0" />
         </Wire>
-        <User classid="UserCmp" id="512038188" name="GFMBESS20251112:POD_1_3_1_1" x="198" y="468" w="116" h="69" z="1200" orient="0" defn="GFMBESS20251112:POD_1_3_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" id="512038188" name="GFMBESS:POD_1_3_1_1" x="198" y="468" w="116" h="69" z="1200" orient="0" defn="GFMBESS:POD_1_3_1_1" link="-1" q="4" disable="false">
           <paramlist name="" link="-1" crc="14242604">
             <param name="Name" value="" />
           </paramlist>
@@ -215403,7 +215403,7 @@ Generate switching pulses]]></Sticky>
             <param name="Name" value="" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:PIwithFreeze_3_1_1_3_1_1" id="2017183234" x="738" y="810" w="91" h="82" z="1890" orient="0" defn="GFMBESS20251112:PIwithFreeze_3_1_1_3_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PIwithFreeze_3_1_1_3_1_1" id="2017183234" x="738" y="810" w="91" h="82" z="1890" orient="0" defn="GFMBESS:PIwithFreeze_3_1_1_3_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="20317870">
             <param name="Name" value="" />
             <param name="Kp" value="KpVm" />
@@ -215487,13 +215487,13 @@ Generate switching pulses]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="36" y="0" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:MovAvg_3_3_1_1" id="1232006404" x="1800" y="324" w="80" h="29" z="2240" orient="0" defn="GFMBESS20251112:MovAvg_3_3_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:MovAvg_3_3_1_1" id="1232006404" x="1800" y="324" w="80" h="29" z="2240" orient="0" defn="GFMBESS:MovAvg_3_3_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="69479511">
             <param name="Name" value="MovAvg_1" />
             <param name="Freq" value="500 [Hz]" />
           </paramlist>
         </User>
-        <User classid="UserCmp" name="GFMBESS20251112:MovAvg_3_3_1_1" id="1164199855" x="1800" y="342" w="80" h="29" z="2230" orient="0" defn="GFMBESS20251112:MovAvg_3_3_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:MovAvg_3_3_1_1" id="1164199855" x="1800" y="342" w="80" h="29" z="2230" orient="0" defn="GFMBESS:MovAvg_3_3_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="69479511">
             <param name="Name" value="MovAvg_1" />
             <param name="Freq" value="500 [Hz]" />
@@ -222200,7 +222200,7 @@ Generate switching pulses]]></Sticky>
           <vertex x="0" y="0" />
           <vertex x="0" y="36" />
         </Wire>
-        <User classid="UserCmp" name="GFMBESS20251112:PIwithFreeze_2_1_3_1_1" id="1063944600" x="396" y="54" w="87" h="82" z="1420" orient="6" defn="GFMBESS20251112:PIwithFreeze_2_1_3_1_1" link="-1" q="4" disable="false">
+        <User classid="UserCmp" name="GFMBESS:PIwithFreeze_2_1_3_1_1" id="1063944600" x="396" y="54" w="87" h="82" z="1420" orient="6" defn="GFMBESS:PIwithFreeze_2_1_3_1_1" link="-1" q="4" disable="false">
           <paramlist link="-1" name="" crc="20115491">
             <param name="Name" value="" />
             <param name="Kp" value="KpP" />
@@ -254275,28 +254275,28 @@ H = inertia constant]]></Sticky>
   </definitions>
   <List classid="Resource" />
   <hierarchy>
-    <call link="1617920" name="GFMBESS20251112:DS" z="-1" view="false" instance="0">
-      <call link="69476381" name="GFMBESS20251112:Main" z="-1" view="true" instance="0">
-        <call link="1585416183" name="GFMBESS20251112:AllPlots" z="30" view="false" instance="0" />
-        <call link="1522488531" name="GFMBESS20251112:Synchronizer_1_1" z="740" view="false" instance="0" />
-        <call link="74139314" name="GFMBESS20251112:Load" z="850" view="false" instance="0" />
-        <call link="1186628671" name="GFMBESS20251112:Grid_1" z="950" view="false" instance="0" />
-        <call link="477036609" name="GFMBESS20251112:BESSGFM_VirtImp" z="970" view="false" instance="0">
-          <call link="1004414084" name="GFMBESS20251112:Synchronizer_1_1" z="290" view="false" instance="1" />
-          <call link="1672393785" name="GFMBESS20251112:BESS_1_1" z="380" view="false" instance="0">
-            <call link="102488955" name="GFMBESS20251112:BESS_2LvlVSC_1_1" z="430" view="false" instance="0">
-              <call link="504392661" name="GFMBESS20251112:Conv_to_pu3_1_1" z="450" view="false" instance="0" />
-              <call link="1693270731" name="GFMBESS20251112:Conv_to_pu3_1_1" z="480" view="false" instance="1" />
-              <call link="973937663" name="GFMBESS20251112:BESS_LC_filter_1_1" z="550" view="false" instance="0" />
-              <call link="952269080" name="GFMBESS20251112:BESS_GFMCtrl_VImp2_1" z="610" view="false" instance="0">
-                <call link="95829368" name="GFMBESS20251112:PNExtract_3_2_3_1_1" z="1150" view="false" instance="0" />
-                <call link="1909317674" name="GFMBESS20251112:PNExtract_3_2_3_1_1" z="1190" view="false" instance="1" />
-                <call link="512038188" name="GFMBESS20251112:POD_1_3_1_1" z="1200" view="false" instance="0" />
-                <call link="1063944600" name="GFMBESS20251112:PIwithFreeze_2_1_3_1_1" z="1420" view="false" instance="0" />
-                <call link="2037281674" name="GFMBESS20251112:PIwithFreeze_2_1_3_1_1" z="1510" view="false" instance="1" />
-                <call link="259955630" name="GFMBESS20251112:PIwithFreeze_3_1_1_3_1_1" z="1610" view="false" instance="0" />
-                <call link="303119506" name="GFMBESS20251112:PIwithFreeze_3_1_1_3_1_1" z="1680" view="false" instance="1" />
-                <call link="2017183234" name="GFMBESS20251112:PIwithFreeze_3_1_1_3_1_1" z="1890" view="false" instance="2" />
+    <call link="245099825" name="GFMBESS:DS" z="-1" view="false" instance="0">
+      <call link="69476381" name="GFMBESS:Main" z="-1" view="true" instance="0">
+        <call link="1585416183" name="GFMBESS:AllPlots" z="30" view="false" instance="0" />
+        <call link="1522488531" name="GFMBESS:Synchronizer_1_1" z="740" view="false" instance="0" />
+        <call link="74139314" name="GFMBESS:Load" z="850" view="false" instance="0" />
+        <call link="1186628671" name="GFMBESS:Grid_1" z="950" view="false" instance="0" />
+        <call link="477036609" name="GFMBESS:BESSGFM_VirtImp" z="970" view="false" instance="0">
+          <call link="1004414084" name="GFMBESS:Synchronizer_1_1" z="290" view="false" instance="1" />
+          <call link="1672393785" name="GFMBESS:BESS_1_1" z="380" view="false" instance="0">
+            <call link="102488955" name="GFMBESS:BESS_2LvlVSC_1_1" z="430" view="false" instance="0">
+              <call link="504392661" name="GFMBESS:Conv_to_pu3_1_1" z="450" view="false" instance="0" />
+              <call link="1693270731" name="GFMBESS:Conv_to_pu3_1_1" z="480" view="false" instance="1" />
+              <call link="973937663" name="GFMBESS:BESS_LC_filter_1_1" z="550" view="false" instance="0" />
+              <call link="952269080" name="GFMBESS:BESS_GFMCtrl_VImp2_1" z="610" view="false" instance="0">
+                <call link="95829368" name="GFMBESS:PNExtract_3_2_3_1_1" z="1150" view="false" instance="0" />
+                <call link="1909317674" name="GFMBESS:PNExtract_3_2_3_1_1" z="1190" view="false" instance="1" />
+                <call link="512038188" name="GFMBESS:POD_1_3_1_1" z="1200" view="false" instance="0" />
+                <call link="1063944600" name="GFMBESS:PIwithFreeze_2_1_3_1_1" z="1420" view="false" instance="0" />
+                <call link="2037281674" name="GFMBESS:PIwithFreeze_2_1_3_1_1" z="1510" view="false" instance="1" />
+                <call link="259955630" name="GFMBESS:PIwithFreeze_3_1_1_3_1_1" z="1610" view="false" instance="0" />
+                <call link="303119506" name="GFMBESS:PIwithFreeze_3_1_1_3_1_1" z="1680" view="false" instance="1" />
+                <call link="2017183234" name="GFMBESS:PIwithFreeze_3_1_1_3_1_1" z="1890" view="false" instance="2" />
               </call>
             </call>
           </call>

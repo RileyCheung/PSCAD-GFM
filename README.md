@@ -11,3 +11,4 @@ This PSCAD model was based on a model I received was from Farid at PSCAD, after 
 * Once the simulation ends (the terminal will notify you, it may take a while for the csv to load depending on the sample time step) run the plotting.ipynb file to visualise results.
 * pscad_utils.py should not be touched unless you are adding additional functionality that is not yet available.
 <img width="1684" height="910" alt="{8BDD64A0-6768-49DC-BA56-F7D70D4D8DBE}" src="https://github.com/user-attachments/assets/33983e39-b380-41f8-9285-8839f1ccc1b4" />
+<img width="2560" height="1327" alt="Figure_1" src="https://github.com/user-attachments/assets/767297af-750b-40df-beaa-c1d6f915cf25" />

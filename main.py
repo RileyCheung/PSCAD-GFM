@@ -10,7 +10,7 @@ from pscad_utils import Sim, run_simulation, collect_results, convert_results_to
 
 SETTINGS = {"fortran_version": "GFortran 4.6.2"}
 FORTRAN_EXT = ".gf46"
-PROJECT_NAME = "GFMBESS20251112"
+PROJECT_NAME = "GFMBESS"
 # ------------------------------------------------------------------
 # Simulation Cases and parameters
 # ------------------------------------------------------------------
@@ -18,7 +18,7 @@ PROJECT_NAME = "GFMBESS20251112"
 TIME_PARAMS = (5, 10, 100)  # duration (s), time-step (µs), sample-step (µs)
 SIMULATIONS = []
 
-for h in [2, 3]:
+for h in [2]:
     for d in [10000, 1000, 100]:
         # Do something with h and d
         sim = Sim(f"H_{h}_D_{d}")

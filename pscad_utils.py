@@ -20,7 +20,7 @@ class Sim:
             scl = 5, 
             xr = 5, 
             H = 2, 
-            D = 1/1000, 
+            D = 0.001, 
             fdroop = 0.01, 
             inverter_size = 1.1, 
             no_inverters = 1, 
@@ -30,6 +30,7 @@ class Sim:
             fault_type = 1,
             fault_time = 4,
             fault_duration = 0.05,
+            rocof_mag = 1 
             ):
         self.sim_name = sim_name
         self.prefA = prefA # plant acitve power setpoint (pu)
@@ -42,6 +43,7 @@ class Sim:
         self.no_inverters = no_inverters # parallel inverters in plant
         self.POD_en = POD_en # Power oscillation damper
         self.line_length = line_length # Transmission line length between IBR and grid (m)
+        self.rocof_mag = rocof_mag # grid rocof value for rocof test
         
         self.test_case = test_case # rocof, fault, etc
         self.fault_type = fault_type # used for both ibr and load faults
@@ -69,8 +71,9 @@ class Sim:
         self.P2P_BC = 10
         self.P2P_ABC = 11
         
-    def set_ROCOF(self):
+    def set_ROCOF(self, user_rocof = 1):
         self.test_case = self.ROCOF_TEST
+        self.rocof_mag = user_rocof
     def set_IBR_FAULT(self):
         self.test_case = self.IBR_FAULT_TEST
     def set_LOAD_FAULT(self):
@@ -182,7 +185,7 @@ def set_test_case_paramters(sim: Sim, project) -> None:
         case sim.ROCOF_TEST:
             grid_model = project.component(1186628671).canvas()
             RoCoF_en = grid_model.component(593429605)
-            RoCoF_en.parameters(G = 1) # multiplying constant
+            RoCoF_en.parameters(G = sim.rocof_mag) # multiplying constant
             print(f"[INFO] RoCoF test: Enabled")
 
         case sim.IBR_FAULT_TEST:

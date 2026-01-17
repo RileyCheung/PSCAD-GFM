@@ -15,20 +15,29 @@ PROJECT_NAME = "GFMBESS"
 # Simulation Cases and parameters
 # ------------------------------------------------------------------
 
-TIME_PARAMS = (5, 10, 100)  # duration (s), time-step (µs), sample-step (µs)
+TIME_PARAMS = (5, 1, 50)  # duration (s), time-step (µs), sample-step (µs)
 SIMULATIONS = []
 
-for h in [2, 3]:
-    for d in [10000, 1000, 100]:
-        # Do something with h and d
-        sim = Sim(f"H_{h}_D_{d}")
-        sim.H = h
-        sim.D = 1/d
-        sim.set_LOAD_JUMP()
-        sim.load_p = 3
-        sim.load_pf = 1
-        SIMULATIONS.append(sim)
+sim1 = Sim("D001")
+sim1.set_ROCOF()
+SIMULATIONS.append(sim1)
 
+
+sim6 = Sim("D005")
+sim6.D = 0.005
+sim6.set_ROCOF()
+SIMULATIONS.append(sim6)
+
+sim2 = Sim("D01")
+sim2.D = 0.01
+sim2.set_ROCOF()
+SIMULATIONS.append(sim2)
+
+
+sim3 = Sim("D05")
+sim3.D = 0.05
+sim3.set_ROCOF()
+SIMULATIONS.append(sim3)
 # ------------------------------------------------------------------
 # Main entry-point
 # ------------------------------------------------------------------
@@ -65,7 +74,7 @@ if __name__ == "__main__":
         processes.append(p)
         print(f"[START] {simulation.sim_name}")
         p.start()
-        time.sleep(5)  # stagger launches to avoid PSCAD conflicts
+        time.sleep(0.5)  # stagger launches to avoid PSCAD conflicts
 
     # --- Wait for completion ----------------------------------------------------
     for p in processes:

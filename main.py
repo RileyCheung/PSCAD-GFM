@@ -15,29 +15,19 @@ PROJECT_NAME = "GFMBESS"
 # Simulation Cases and parameters
 # ------------------------------------------------------------------
 
-TIME_PARAMS = (5, 1, 50)  # duration (s), time-step (µs), sample-step (µs)
+TIME_PARAMS = (10, 2, 50)  # duration (s), time-step (µs), sample-step (µs)
 SIMULATIONS = []
 
-sim1 = Sim("D001")
-sim1.set_ROCOF()
+sim1 = Sim("p1")
+sim1.load_p = 0.1
+sim1.set_LOAD_JUMP()
 SIMULATIONS.append(sim1)
 
+sim1 = Sim("n1")
+sim1.load_p = -0.1
+sim1.set_LOAD_JUMP()
+SIMULATIONS.append(sim1)
 
-sim6 = Sim("D005")
-sim6.D = 0.005
-sim6.set_ROCOF()
-SIMULATIONS.append(sim6)
-
-sim2 = Sim("D01")
-sim2.D = 0.01
-sim2.set_ROCOF()
-SIMULATIONS.append(sim2)
-
-
-sim3 = Sim("D05")
-sim3.D = 0.05
-sim3.set_ROCOF()
-SIMULATIONS.append(sim3)
 # ------------------------------------------------------------------
 # Main entry-point
 # ------------------------------------------------------------------

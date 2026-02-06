@@ -30,7 +30,9 @@ class Sim:
             fault_type = 1,
             fault_time = 4,
             fault_duration = 0.05,
-            rocof_mag = 1 
+            rocof_mag = 1,
+            load_p = 1,
+            load_pf = 1 
             ):
         self.sim_name = sim_name
         self.prefA = prefA # plant acitve power setpoint (pu)
@@ -49,8 +51,8 @@ class Sim:
         self.fault_type = fault_type # used for both ibr and load faults
         self.fault_time = fault_time
         self.fault_duration = fault_duration
-        self.load_p = 1 # load value (MW)
-        self.load_pf = 1 # power factor of load
+        self.load_p = load_p # load value (MW)
+        self.load_pf = load_pf # power factor of load
 
             # TEST CASES
         self.ROCOF_TEST = 0
